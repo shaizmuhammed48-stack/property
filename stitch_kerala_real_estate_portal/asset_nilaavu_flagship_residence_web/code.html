@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "on-tertiary-fixed": "#002018", "inverse-primary": "#a6d0be", "on-primary-fixed-variant": "#274e41", "error": "#ba1a1a", "on-secondary-container": "#785a1a", "error-container": "#ffdad6", "surface-container-low": "#eff5f1", "on-tertiary": "#ffffff", "on-surface-variant": "#414845", "tertiary-container": "#00392c", "surface-container-lowest": "#ffffff", "primary-fixed": "#c1ecda", "surface-variant": "#dee4e0", "on-secondary-fixed": "#261900", "tertiary-fixed-dim": "#99d2be", "background": "#f5fbf7", "on-surface": "#171d1b", "primary": "#002218", "on-tertiary-container": "#6da492", "tertiary": "#002219", "on-background": "#171d1b", "outline": "#717975", "primary-fixed-dim": "#a6d0be", "tertiary-fixed": "#b5efda", "surface-bright": "#f5fbf7", "surface-container": "#e9efec", "secondary-fixed": "#ffdea5", "on-primary": "#ffffff", "surface-container-highest": "#dee4e0", "on-primary-container": "#79a292", "surface-tint": "#3f6658", "on-tertiary-fixed-variant": "#155041", "inverse-on-surface": "#ecf2ee", "on-error-container": "#93000a", "primary-container": "#0f382c", "secondary-fixed-dim": "#e9c176", "on-primary-fixed": "#002117", "inverse-surface": "#2c3230", "surface": "#f5fbf7", "surface-dim": "#d5dbd8", "secondary": "#775a19", "on-error": "#ffffff", "outline-variant": "#c1c8c3", "on-secondary-fixed-variant": "#5d4201", "surface-container-high": "#e4eae6", "secondary-container": "#fed488" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.25rem", "space-md": "1rem", "gutter": "1rem", "margin-desktop": "3rem" }, "fontFamily": { "headline-md": ["Newsreader"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg-mobile": ["Newsreader"], "label-lg": ["Manrope"], "display-lg": ["Newsreader"], "body-md": ["Manrope"], "headline-sm": ["Manrope"], "headline-lg": ["Newsreader"], "body-lg": ["Manrope"], "body-sm": ["Manrope"] }, "fontSize": { "headline-md": ["26px", { "lineHeight": "32px", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="explore-residences" href="#"><span class="material-symbols-outlined text-secondary text-[26px]">villa</span><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">Kerala Estates</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mt-0.5">Luxury Living</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-on-surface-variant"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer pr-space-xs"><option value="kochi">Kochi (Marine Drive)</option><option value="trivandrum">Trivandrum (Kowdiar)</option><option value="calicut">Calicut (Beach Road)</option><option value="thrissur">Thrissur (Heritage Belt)</option><option value="alappuzha">Alappuzha (Backwaters)</option></select></div></div><div class="hidden lg:flex items-center flex-1 max-w-xs mx-space-sm"><div class="w-full flex items-center bg-surface-container-lowest rounded-xl px-space-sm py-1.5 shadow-[0_1px_4px_rgba(15,56,44,0.04)]"><span class="material-symbols-outlined text-outline text-[18px] mr-space-xs">search</span><input class="w-full bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search waterfront villas, penthouses..." type="text"/></div></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-primary font-bold bg-surface-container-low rounded-xl px-space-sm py-1.5"><a aria-current="page" class="transition-colors text-primary font-bold bg-surface-container-low rounded-xl px-space-sm py-1.5" data-path="explore-residences" href="#">Explore Residences</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-space-sm" data-path="enquiries-and-crm" href="#">Enquiries &amp; CRM</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-space-sm" data-path="concierge" href="#">Concierge</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors py-1.5 px-space-sm" data-path="about" href="#">About</a></nav><div class="flex items-center gap-space-md"><a class="hidden 2xl:flex flex-col text-right" href="tel:+914842908000"><span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-wider">Private Desk</span><span class="font-label-md text-label-md text-primary font-bold">+91 484 290 8000</span></a><a class="hidden sm:inline-flex items-center justify-center px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" data-path="schedule-visit" href="#">Schedule Visit</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle ambient aura behind content -->
+<div class="relative w-full max-w-7xl mx-auto px-margin-desktop">
+<!-- Breadcrumb Bar & Top Badges -->
+<div class="py-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-outline text-[10px]">/</span>
+<a class="hover:text-primary transition-colors" href="#">Kerala Residences</a>
+<span class="text-outline text-[10px]">/</span>
+<a class="hover:text-primary transition-colors" href="#">Alappuzha</a>
+<span class="text-outline text-[10px]">/</span>
+<span class="text-primary font-bold">Asset Nilaavu (Ref: P004)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-widest">
+<span class="material-symbols-outlined text-[14px]">verified</span> K-RERA VERIFIED
+        </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider">
+          Exclusive Flagship
+        </span>
+</div>
+</div>
+<!-- Editorial Hero Mosaic Gallery -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-sm rounded-xl overflow-hidden shadow-sm bg-surface-container-low p-1.5">
+<!-- Main Panoramic Showcase Image -->
+<div class="lg:col-span-8 relative group overflow-hidden rounded-xl h-[440px] bg-surface-container">
+<img alt="Asset Nilaavu luxury waterfront apartment complex overlooking serene Punnamada Lake in Alappuzha" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKCyrBM2oQdL8z2RQcw7CsXI-3JJ74qkUZDT777L0yQCNPbEulIBVgJ1I0v_xOKYkv8KTZltuHlrcahxs1k5w4JQJdhCerg5Scf2tAV6c_gNosOWTAX1weBPklAPcb5i_k8wKgcffNDmyBkqZnSH2qHYKhZlp5GV8Ql5T4Mz2r6kL87gk4YFDUqlIpWw_ZVa8sxcEZ4TiQenMuRRnekvSSdMepac_lEjliZWRu9cEC3y2yPJ8goMwLPA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-black/20 pointer-events-none"></div>
+<div class="absolute top-space-md left-space-md flex gap-2">
+<span class="px-space-sm py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider shadow-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Punnamada Lakefront
+          </span>
+</div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between text-on-primary">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Flagship Residence P004</p>
+<h2 class="font-headline-md text-headline-md font-semibold drop-shadow-sm">Asset Nilaavu Sanctuary</h2>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-primary font-label-md text-label-md backdrop-blur-md shadow-md flex items-center gap-1.5 transition-all transform hover:-translate-y-0.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">360</span> 360° Lake Tour
+          </button>
+</div>
+</div>
+<!-- 2-Up Right Stacked Thumbnails -->
+<div class="lg:col-span-4 flex flex-col gap-space-sm h-[440px]">
+<!-- Master Suite Image Placeholder -->
+<div class="relative group h-1/2 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Luxurious master bedroom in contemporary Kerala style with expansive teak wood ceilings, sliding floor-to-ceiling glass doors opening directly onto the tranquil backwaters of Alappuzha, morning sunlight, soft beige linen textiles, understated champagne accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrXNHnYLcVsm6fU1PN5XleJ3VdkYscQ09h631qKZGBMp__L3C3uqHd2qfM9dHn3NeFHRLVIMsWnbZ8abPKbAoT1LiST-t6BctlriTGLq7EIM5OLS2CgV8nUAJGb02K6Mnec8ifi9HKvvdjkqJ1YDyycpj5jKQj8AmMm_rvyriZY8o3ByQsFTLNT0haOckgW2_aZ6eAUaNXMVtQfHs6wFZZEgdSSpT0Y_h7iS8gwH2pO5hW_QsG8Dzluw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 text-on-primary">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary-fixed">Master Lake Suite</span>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Teak finishing &amp; uninterrupted water horizon</p>
+</div>
+</div>
+<!-- Sunset Deck Image Placeholder with Photo Count Overlay -->
+<div class="relative group h-1/2 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Private waterfront timber sunset deck on Punnamada lake with designer wicker lounge loungers, warm golden hour ambient lighting, lush tropical coconut palms reflected in tranquil ripples, high-end tropical modern architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJmH2VszCRd0KdA98syBIVeynxhvFWdMOEb-LMGVcESaEVNIrcNsBzX9Q3VAYlUJxo9rXxHMmHQ_18eF6UgnVq5QHSCJiKIKbl_EP_nr2hkC3wSVywOurSGbJySOezGwPaTCME_bDxSqJpp3hTP2seC11nqEVH_1Rh1OrTl5VK7sDVOqlF5wfzXocS4b-b9pgxlx_zASVlS9qrCv-BOSRH04GtEo_lkN-O_QWJ2nTy23hmp0EC6wQWyQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-3 left-3 text-on-primary">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary-fixed">Sunset Observation Deck</span>
+<p class="font-body-sm text-body-sm text-surface-container-highest">Private jetty access &amp; infinity view</p>
+</div>
+<button class="absolute top-3 right-3 px-3 py-1.5 rounded-lg bg-primary/80 hover:bg-primary text-on-primary font-label-sm text-label-sm backdrop-blur-md flex items-center gap-1 shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[16px]">photo_library</span> View 14 Photos
+          </button>
+</div>
+</div>
+</div>
+<!-- Main Content Layout (65% Content / 35% Sticky Sidebar) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop mt-space-lg mb-space-xl items-start">
+<!-- Left Column (65% ~ 8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Header & Price Highlights -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-start justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">location_on</span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Punnamada, Alappuzha (God's Own Country)</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-primary leading-tight">Asset Nilaavu — Punnamada Waterfront Haven</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">An architectural masterwork designed to capture the timeless calm of the Punnamada backwaters with modern luxury conveniences.</p>
+</div>
+<!-- Valuation Box -->
+<div class="md:text-right shrink-0 bg-surface-container-low p-space-md rounded-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Investment Valuation</span>
+<div class="font-headline-lg text-headline-lg text-primary font-bold">₹96,00,000</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold tracking-wider">(₹96 Lakh All-Inclusive)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Est. EMI: <strong class="text-primary font-semibold">₹64,800/mo</strong></p>
+<div class="mt-2 inline-flex items-center gap-1 text-[11px] font-label-sm uppercase tracking-wider text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[14px]">account_balance</span> SBI &amp; HDFC Pre-Approved
+              </div>
+</div>
+</div>
+<!-- Specifications Row -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-space-sm pt-space-md bg-surface-container-low/60 p-space-sm rounded-lg">
+<div class="flex flex-col p-2 text-center sm:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Bedrooms</span>
+<div class="flex items-center justify-center sm:justify-start gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">bed</span>
+<span class="font-headline-sm text-headline-sm text-primary">3 Beds</span>
+</div>
+</div>
+<div class="flex flex-col p-2 text-center sm:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Bathrooms</span>
+<div class="flex items-center justify-center sm:justify-start gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">bathtub</span>
+<span class="font-headline-sm text-headline-sm text-primary">3 Baths</span>
+</div>
+</div>
+<div class="flex flex-col p-2 text-center sm:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Super Built-up</span>
+<div class="flex items-center justify-center sm:justify-start gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">square_foot</span>
+<span class="font-headline-sm text-headline-sm text-primary">1,780 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-col p-2 text-center sm:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Status</span>
+<div class="flex items-center justify-center sm:justify-start gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">key</span>
+<span class="font-headline-sm text-headline-sm text-primary">Ready to Move</span>
+</div>
+</div>
+<div class="flex flex-col p-2 text-center sm:text-left col-span-2 sm:col-span-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Lake Aspect</span>
+<div class="flex items-center justify-center sm:justify-start gap-1 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">water</span>
+<span class="font-headline-sm text-headline-sm text-primary">100% Water Facing</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Architectural Description & Highlights -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-primary">Architectural Description &amp; Essence</h3>
+<span class="font-label-sm text-label-sm uppercase text-secondary font-bold tracking-widest">Heritage Craft</span>
+</div>
+<div class="font-body-lg text-body-lg text-on-surface-variant space-y-space-sm leading-relaxed">
+<p>
+              Perched graciously along the tranquil rim of world-renowned <strong class="text-primary font-semibold">Punnamada Lake</strong>, Asset Nilaavu stands as an exceptional homage to traditional Kerala vernacular re-imagined through contemporary glass and timber lines. Every room is deliberately engineered to face east-northeast, greeting every sunrise with panoramic reflections off the legendary Nehru Trophy boat race waters.
+            </p>
+<p>
+              Interiors are adorned with hand-planed Nilambur teak door frames, Italian Statuario marble in living areas, and expansive floor-to-ceiling glass façades with high acoustic resistance. Located a leisurely 2-minute stroll from the landmark <strong class="text-primary font-semibold">Ramada Resort by Wyndham</strong>, residents enjoy an isolated haven coupled with direct marina and luxury hospitality access.
+            </p>
+</div>
+<!-- Highlight Key Callouts -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">sailing</span>
+<span class="font-label-md text-label-md font-bold">Private Boat Mooring</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dedicated boat jetty slipway for traditional Shikara or high-speed runabouts.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">balcony</span>
+<span class="font-label-md text-label-md font-bold">18-Foot Waterfront Balcony</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deep cantilevered shaded veranda overlooking the backwater channel.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-secondary text-[20px]">wb_sunny</span>
+<span class="font-label-md text-label-md font-bold">Vastu-Compliant Flow</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Carefully aligned spatial geometry prioritizing eastern light and cross-ventilation.</p>
+</div>
+</div>
+</div>
+<!-- Curated Amenities Grid -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Curated Lifestyle Amenities</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineered for bespoke comfort and serene leisure on the backwater rim.</p>
+</div>
+<span class="px-space-sm py-1 bg-surface-container text-primary font-label-sm text-label-sm rounded uppercase font-bold tracking-wider">6 Signature Amenities</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-md">
+<!-- Amenity 1 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">balcony</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Private Balcony</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Deep teak-lined terrace</span>
+</div>
+</div>
+<!-- Amenity 2 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">water</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Backwater View</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Unobstructed lake panorama</span>
+</div>
+</div>
+<!-- Amenity 3 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">fitness_center</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">AC Fitness Centre</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Technogym cardio &amp; free weights</span>
+</div>
+</div>
+<!-- Amenity 4 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">pool</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Swimming Pool</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lagoon-edge pool with shallow deck</span>
+</div>
+</div>
+<!-- Amenity 5 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">directions_car</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Covered Parking</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 Reserved bays + EV charger</span>
+</div>
+</div>
+<!-- Amenity 6 -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low/70 hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">deck</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary">Waterfront Deck</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Landscaped sunset promenade</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Location & Neighborhood Map Section -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary">Neighborhood &amp; Connectivity</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Punnamada Lake, Alappuzha — The Venetian Heart of Kerala</p>
+</div>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">navigation</span> High Connectivity Corridor
+            </span>
+</div>
+<!-- Static Map Component -->
+<div class="w-full h-72 bg-cover bg-center rounded-xl relative shadow-inner overflow-hidden flex items-end p-space-md" data-location="Punnamada Lake, Alappuzha, Kerala, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnMGQbYuVEej-xGSrpZhy7l85oa6pHMnmxgWdvZzPhVzDcFN5DFeCMs26KAkwKBQDyCGQJ2QQX-e_WK4Bif_yvb5lMN6NtnWGJ8KQH9oJ1ZDpDzpaU8Xx822N-y6D-tOLsSmL8fNRdof4HA8MKDZ4aLwSIO_9oHmJ6GXuURtUnV9Qx-R7dp2QpUnSMWaghvxPiFeJVfG6TCJKbEkX9bV2mIMVlEfIPd67Lql-O8xnr7zcxOGlYZFBpnQ')">
+<div class="bg-surface/95 backdrop-blur-md px-space-md py-space-sm rounded-xl shadow-md max-w-sm flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px]">pin_drop</span>
+<div class="flex flex-col">
+<strong class="font-label-lg text-label-lg text-primary">Punnamada Finishing Point</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alappuzha Backwaters, Kerala 688006</span>
+</div>
+</div>
+</div>
+<!-- Travel Times Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">hotel</span>
+<div>
+<strong class="font-label-md text-label-md text-primary block">2 Mins</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ramada Resort Jetty</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">train</span>
+<div>
+<strong class="font-label-md text-label-md text-primary block">15 Mins</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Alappuzha Station</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">beach_access</span>
+<div>
+<strong class="font-label-md text-label-md text-primary block">18 Mins</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Marari White Beach</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">flight</span>
+<div>
+<strong class="font-label-md text-label-md text-primary block">70 Mins</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cochin Int'l Airport</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dedicated Senior Advisor Profile Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest to-surface-container-low">
+<div class="flex items-center gap-space-md">
+<div class="relative">
+<img class="w-16 h-16 rounded-full object-cover shadow-md" data-alt="Distinguished professional Indian real estate portfolio advisor in smart emerald blazer, warm confident expression, high quality corporate portrait with subtle teak wood background lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR5KQHaqVBrVabVpv-mdCh9sEV7RKOw0QWcUZnRI-x3lf0lAUE51gicTyN55xZLcdMwkaRkMj3jgaWYWIH2drmERP3AavKlpQUCfRcxOIGuA7N5c0omDE9zBGTSqLfpeJ1p1Rrb3mqhI9K7x5HkpWmk8i7wPfDk997VaQiqvEoi6SOQpAC6JHUEdStorbd9Kp-pzI_7707dMTXenDuAMitKAeY7Va_SBvazy1kVJ2TvjbChoia43k8Zg"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-primary-container border-2 border-surface-container-lowest" title="Verified Kerala Waterfront Specialist"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Exclusive Representative</span>
+<h4 class="font-headline-sm text-headline-sm text-primary">Rahul Nair</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senior Kerala Waterfront Advisor • 14 Yrs Backwater Advisory</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-colors shadow-sm" href="tel:+919847012345">
+<span class="material-symbols-outlined text-[18px]">call</span> +91 98470 12345
+            </a>
+<a class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" href="https://wa.me/919847012345?text=Hello%20Rahul,%20I%20am%20interested%20in%20Asset%20Nilaavu%20(Ref:%20P004)%20in%20Punnamada" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span> WhatsApp Desk
+            </a>
+</div>
+</div>
+</div>
+<!-- Right Column (35% ~ 4 cols Sticky Booking Card) -->
+<div class="lg:col-span-4 sticky top-24 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-lg p-space-lg flex flex-col gap-space-md">
+<!-- Card Header -->
+<div class="flex flex-col gap-1 pb-space-xs">
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span> Private Viewing
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Schedule a Private Experience &amp; Backwater Site Visit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tour the completed Asset Nilaavu residence accompanied by a private backwater cruise preview.</p>
+</div>
+<!-- Schedule Form -->
+<form class="flex flex-col gap-space-sm" id="site-visit-form" onsubmit="event.preventDefault(); showVisitConfirmation();">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="visitor-name">Full Name *</label>
+<input class="w-full bg-surface-container-low px-space-sm py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" id="visitor-name" placeholder="e.g. Dr. K. Kuruvilla" required="" type="text"/>
+</div>
+<!-- Phone Number -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="visitor-phone">Phone / WhatsApp *</label>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-2.5 bg-surface-container-low rounded-xl text-primary font-label-md text-label-md font-semibold shrink-0">+91</span>
+<input class="w-full bg-surface-container-low px-space-sm py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" id="visitor-phone" placeholder="98470 00000" required="" type="tel"/>
+</div>
+</div>
+<!-- Preferred Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant" for="visit-date">Preferred Viewing Date *</label>
+<input class="w-full bg-surface-container-low px-space-sm py-2.5 rounded-xl font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary/40 transition-all" id="visit-date" required="" type="date"/>
+</div>
+<!-- Time Slot Selector Radio Pills -->
+<div class="flex flex-col gap-1.5 pt-1">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Selected Viewing Slot</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-1.5" id="slot-container">
+<button class="slot-btn py-2 px-1 text-center rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm font-semibold transition-colors focus:bg-primary focus:text-on-primary active-slot" type="button">
+                  10:00 AM<br/><span class="text-[10px] opacity-75">Morning Light</span>
+</button>
+<button class="slot-btn py-2 px-1 text-center rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-sm text-label-sm font-semibold transition-colors focus:bg-primary focus:text-on-primary" type="button">
+                  02:00 PM<br/><span class="text-[10px] opacity-75">Afternoon Breeze</span>
+</button>
+<button class="slot-btn py-2 px-1 text-center rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold transition-colors shadow-sm" type="button">
+                  04:30 PM<br/><span class="text-[10px] text-secondary">Sunset Slot</span>
+</button>
+</div>
+</div>
+<!-- Quick Inquiry Checkboxes -->
+<div class="flex flex-col gap-2 pt-space-xs">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant">Specific Interests</label>
+<label class="flex items-start gap-2.5 cursor-pointer text-on-surface group">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-secondary accent-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm group-hover:text-primary transition-colors">Is it available for immediate possession?</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer text-on-surface group">
+<input checked="" class="mt-0.5 rounded text-primary focus:ring-secondary accent-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm group-hover:text-primary transition-colors">Need detailed floor plan &amp; brochure</span>
+</label>
+<label class="flex items-start gap-2.5 cursor-pointer text-on-surface group">
+<input class="mt-0.5 rounded text-primary focus:ring-secondary accent-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-sm text-body-sm group-hover:text-primary transition-colors">What are the customized EMI &amp; loan options?</span>
+</label>
+</div>
+<!-- Primary CTA Action -->
+<button class="w-full mt-space-xs py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold hover:bg-primary-container transition-all shadow-md flex items-center justify-center gap-2 transform active:scale-[0.99]" type="submit">
+<span>Confirm Site Visit Request</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">arrow_forward</span>
+</button>
+<!-- Success Notice (Hidden by default) -->
+<div class="hidden p-space-sm bg-primary-container text-on-primary rounded-xl font-body-sm text-body-sm items-center gap-2" id="booking-confirmation">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span>Visit request confirmed. Rahul Nair will reach you within 2 business hours.</span>
+</div>
+</form>
+<!-- Trust Badges Container -->
+<div class="pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+<span>100% Free Consultation &amp; Private Boat Transfer</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">price_check</span>
+<span>Direct Builder Pricing — Zero Brokerage Commission</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[16px]">lock</span>
+<span>NDA &amp; NRI Asset Confidentiality Assured</span>
+</div>
+</div>
+<!-- Quick Concierge Hotline -->
+<div class="text-center font-body-sm text-body-sm text-on-surface-variant">
+            Prefer instant consultation? Call <a class="font-bold text-primary hover:underline" href="tel:+914842908000">+91 484 290 8000</a>
+</div>
+</div>
+<!-- Investment Return Summary Banner -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">trending_up</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary">Backwater Rental Potential</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Estimated high-season yields of 7.8% via managed luxury home stay licenses.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for micro-interactions -->
+<script>
+    function showVisitConfirmation() {
+      var confirmation = document.getElementById('booking-confirmation');
+      if (confirmation) {
+        confirmation.classList.remove('hidden');
+        confirmation.classList.add('flex');
+      }
+    }
+
+    // Interactive Slot Selector Logic
+    var slotButtons = document.querySelectorAll('.slot-btn');
+    slotButtons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        slotButtons.forEach(function(b) {
+          b.classList.remove('bg-primary-container', 'text-on-primary');
+          b.classList.add('bg-surface-container-low', 'text-primary');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-low', 'text-primary');
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant"><div class="max-w-7xl mx-auto px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-desktop mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[28px]">villa</span><span class="font-headline-md text-headline-md text-primary">Kerala Estates</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Curating bespoke coastal mansions, backwater estates, and elite sky residences across Kerala for high-net-worth investors and families worldwide.</p><div class="pt-space-xs"><p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-space-xs">Private Dispatches</p><div class="flex items-center gap-space-xs max-w-md"><input class="flex-1 bg-surface-container-lowest font-body-sm text-body-sm text-on-surface px-space-sm py-2 rounded-xl focus:outline-none" placeholder="Enter your private email address" type="email"/><button class="px-space-md py-2 bg-primary text-on-primary font-label-md text-label-md rounded-xl hover:bg-primary-container transition-colors">Subscribe</button></div></div></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Portfolio</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-residences" href="#">Kochi Waterfront</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-residences" href="#">Kowdiar Hill Mansions</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-residences" href="#">Kumarakom Private Isles</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-residences" href="#">Calicut Beach Penthouses</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore-residences" href="#">Thrissur Heritage Estates</a></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Kerala Offices</h4><p class="font-body-sm text-body-sm"><span class="font-bold text-on-surface">Kochi:</span> Marine Drive, Level 8, Bayview Tower</p><p class="font-body-sm text-body-sm"><span class="font-bold text-on-surface">Trivandrum:</span> Belhaven Gardens, Kowdiar</p><p class="font-body-sm text-body-sm"><span class="font-bold text-on-surface">Calicut:</span> Regency Square, Beach Road</p><p class="font-body-sm text-body-sm"><span class="font-bold text-on-surface">Thrissur:</span> Palace Road, Round East</p></div><div class="flex flex-col gap-space-sm"><h4 class="font-label-lg text-label-lg text-primary uppercase tracking-wider">Client Desk</h4><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="schedule-visit" href="#">Private Viewings</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="concierge" href="#">NRI Asset Management</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="enquiries-and-crm" href="#">Advisor Access</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">Architectural Heritage</a></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex flex-col md:flex-row items-start md:items-center gap-space-sm font-body-sm text-body-sm"><span class="px-space-xs py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold">K-RERA REG: K-RERA/PRJ/ERN/2024/089</span><span>Compliant with Kerala Real Estate Regulatory Authority regulations.</span></div><div class="flex items-center gap-space-md font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Representation</a><a class="hover:text-on-surface transition-colors" href="#">RERA Disclosures</a></div></div></div></footer></body></html>

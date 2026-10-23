@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --header-height: 76px;
+}
+
+* {
+  border-color: theme("colors.outline-variant");
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: theme("colors.background");
+  color: theme("colors.on-background");
+  font-feature-settings: "ss01" 1, "ss02" 1, "cv11" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(197, 160, 89, 0.28);
+  color: #002218;
+}
+
+:focus-visible {
+  outline: 2px solid rgba(197, 160, 89, 0.9);
+  outline-offset: 3px;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .section-space {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-sans text-label-sm uppercase tracking-[0.22em] text-champagne-deep;
+  }
+
+  .eyebrow-light {
+    @apply inline-flex items-center gap-2 font-sans text-label-sm uppercase tracking-[0.22em] text-secondary-fixed;
+  }
+
+  .display {
+    @apply font-serif text-[2.55rem] leading-[1.06] tracking-[-0.025em] text-primary sm:text-[3.4rem] lg:text-[4.1rem];
+  }
+
+  .headline-xl {
+    @apply font-serif text-[2.1rem] leading-[1.12] tracking-[-0.02em] text-primary sm:text-[2.7rem];
+  }
+
+  .headline-lg {
+    @apply font-serif text-[1.85rem] leading-[1.18] tracking-[-0.02em] text-primary sm:text-[2.25rem];
+  }
+
+  .headline-md {
+    @apply font-serif text-[1.55rem] leading-[1.22] tracking-[-0.015em] text-primary sm:text-[1.75rem];
+  }
+
+  .body-copy {
+    @apply font-sans text-[15px] leading-7 text-on-surface-variant sm:text-base;
+  }
+
+  .card-surface {
+    @apply rounded-xl border border-primary/[0.07] bg-surface-container-lowest shadow-ambient;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-primary/[0.08];
+  }
+
+  .gold-hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-champagne/40 to-transparent;
+  }
+
+  .btn {
+    @apply inline-flex h-12 items-center justify-center gap-2 rounded-lg px-5 font-sans text-label-lg font-semibold transition-all duration-300 ease-editorial disabled:cursor-not-allowed disabled:opacity-55;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-on-primary shadow-sm hover:-translate-y-0.5 hover:bg-primary-container hover:shadow-lift active:translate-y-0;
+  }
+
+  .btn-champagne {
+    @apply btn bg-champagne text-primary shadow-gold-glow hover:-translate-y-0.5 hover:bg-secondary-fixed active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply btn border border-champagne/55 bg-transparent text-primary hover:-translate-y-0.5 hover:border-champagne hover:bg-champagne/10 active:translate-y-0;
+  }
+
+  .btn-ghost {
+    @apply btn bg-surface-container-high text-primary hover:bg-surface-container-highest;
+  }
+
+  .btn-on-dark {
+    @apply btn border border-white/25 bg-white/10 text-white backdrop-blur-md hover:border-secondary-fixed/60 hover:bg-white/15;
+  }
+
+  .input-field {
+    @apply h-12 w-full rounded-lg border border-primary/15 bg-surface-container-lowest px-4 font-sans text-[15px] text-on-surface placeholder:text-outline/75 transition-all duration-200 focus:border-primary focus:outline-none focus:ring-2 focus:ring-champagne/30;
+  }
+
+  .textarea-field {
+    @apply w-full rounded-lg border border-primary/15 bg-surface-container-lowest px-4 py-3 font-sans text-[15px] text-on-surface placeholder:text-outline/75 transition-all duration-200 focus:border-primary focus:outline-none focus:ring-2 focus:ring-champagne/30;
+  }
+
+  .select-field {
+    @apply h-12 w-full cursor-pointer appearance-none rounded-lg border border-primary/15 bg-surface-container-lowest px-4 pr-10 font-sans text-[15px] text-on-surface transition-all duration-200 focus:border-primary focus:outline-none focus:ring-2 focus:ring-champagne/30;
+  }
+
+  .form-label {
+    @apply mb-2 block font-sans text-[11px] font-bold uppercase tracking-[0.14em] text-on-surface-variant;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-champagne/30 bg-champagne/10 px-3 py-1 font-sans text-label-sm uppercase tracking-[0.12em] text-champagne-deep;
+  }
+
+  .chip-soft {
+    @apply inline-flex items-center gap-1.5 rounded bg-surface-container px-2.5 py-1 font-sans text-[11px] font-medium text-on-surface-variant;
+  }
+
+  .admin-card {
+    @apply rounded-xl border border-primary/[0.07] bg-surface-container-lowest shadow-ambient;
+  }
+
+  .image-shimmer {
+    background: linear-gradient(100deg, #e9efec 20%, #f5fbf7 40%, #e9efec 60%);
+    background-size: 700px 100%;
+    @apply animate-shimmer;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .bg-grain {
+    background-image: radial-gradient(rgba(15, 56, 44, 0.06) 0.6px, transparent 0.6px);
+    background-size: 14px 14px;
+  }
+
+  .mask-fade-r {
+    mask-image: linear-gradient(to right, black 78%, transparent 100%);
+  }
+}
+
+/* The success actions live in both a wide enquiry column and the narrower
+   property-detail sidebar. Use the card's own width rather than the viewport
+   so both labels stay on one line and never spill out of the card. */
+.enquiry-success-card {
+  container-type: inline-size;
+}
+
+.enquiry-success-actions {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.enquiry-success-actions > * {
+  width: 100%;
+  min-width: 0;
+  padding-inline: 0.75rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@container (min-width: 30rem) {
+  .enquiry-success-actions {
+    flex-direction: row;
+  }
+
+  .enquiry-success-actions > * {
+    width: auto;
+    flex: 1 1 0%;
+    padding-inline: 1.25rem;
+  }
+}

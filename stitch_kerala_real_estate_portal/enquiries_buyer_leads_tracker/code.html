@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f5fbf7;}body{overscroll-behavior:none;color:#171d1b;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#171d1b", "on-tertiary-fixed-variant": "#155041", "tertiary": "#002219", "tertiary-fixed": "#b5efda", "error-container": "#ffdad6", "primary": "#002218", "on-tertiary-container": "#6da492", "primary-container": "#0f382c", "on-secondary-container": "#785a1a", "on-secondary-fixed-variant": "#5d4201", "inverse-on-surface": "#ecf2ee", "on-surface": "#171d1b", "surface-dim": "#d5dbd8", "primary-fixed": "#c1ecda", "surface-tint": "#3f6658", "on-primary": "#ffffff", "on-error": "#ffffff", "on-secondary-fixed": "#261900", "secondary-fixed": "#ffdea5", "inverse-surface": "#2c3230", "primary-fixed-dim": "#a6d0be", "surface-container-low": "#eff5f1", "on-primary-container": "#79a292", "on-secondary": "#ffffff", "on-error-container": "#93000a", "background": "#f5fbf7", "outline": "#717975", "on-tertiary-fixed": "#002018", "tertiary-container": "#00392c", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#e9c176", "secondary-container": "#fed488", "on-primary-fixed": "#002117", "error": "#ba1a1a", "surface-container-high": "#e4eae6", "outline-variant": "#c1c8c3", "surface-bright": "#f5fbf7", "on-surface-variant": "#414845", "on-primary-fixed-variant": "#274e41", "inverse-primary": "#a6d0be", "secondary": "#775a19", "tertiary-fixed-dim": "#99d2be", "surface-variant": "#dee4e0", "surface": "#f5fbf7", "surface-container-highest": "#dee4e0", "on-tertiary": "#ffffff", "surface-container": "#e9efec" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin": "1.25rem", "gutter": "1rem", "margin-desktop": "3rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-tablet": "2rem", "space-xl": "2.25rem" }, fontFamily: { "headline-md": ["Newsreader"], "headline-lg": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Manrope"], "label-sm": ["Manrope"], "label-lg": ["Manrope"], "headline-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg": ["Newsreader"], "body-sm": ["Manrope"], "body-lg": ["Manrope"] }, fontSize: { "headline-md": ["26px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "500" }], "display-lg-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Haven Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UEMEfIm9tUQGDc63kFbRe3yr1Ps47vu5jMoL8SzZ5kUWo5RULkXufxmIy98-um-GgytuO7Bgy9DnDIjLPR-fXfxe_iZKaufuGpZUZkaElxWDJWSWzhUXLZcJqFiUM8x5Pyv1QXeCrWNc8Ixd4Jy1tHdoAOr1VY9pYO_YOCSS-3IxYF2iHr8dCdllJCGa42bXJiuBONA4-rUVAyh0vei--sWXmFAi-CsB7iOe9-rDNRwKu6XKPF-nyw86dC"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-lg text-label-lg tracking-wider text-primary uppercase truncate">Kerala Estates</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Luxury Living</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Select Location" class="flex items-center gap-1 h-11 px-2.5 rounded-full bg-surface-container-low text-primary hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[80px]">Kochi</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button><button aria-label="Search Properties" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Advisor Profile" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="contact-advisor" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE33HnplzqBw98iJXVw0SQuEbLPc9go0w9yL-u1k9AtnHhC_yK89HW91ExGgD_BRr-bhCRFMV67P9BhTdTtRFvy7tYhQpZmDaVhuIF750o7oRk3HJfzkgVaBKHda6i8VBREnbXdOJQy1OYgjxtMhyvKFu11PfVnAOmsuBmWnyOdCDYlbI6g2T6nS6fVVlqgvx8MZWCu8Yn8b7V_GBf4NNSgFpApHmAXg-1O149nJW8Pi9zFcm76Aw2CA"/></a></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8">
+<!-- Top Luxury Context Header -->
+<section class="px-margin pt-4 pb-3 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">CRM &amp; Portfolio Concierge</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-primary hover:bg-surface-container-highest transition-colors shadow-sm" id="exportBtn" title="Export Enquiries Sheet" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="font-label-md text-label-md">Export Sheet</span>
+</button>
+</div>
+<div class="flex items-baseline justify-between mt-1">
+<h2 class="font-headline-md text-headline-md text-primary font-normal">Lead Management</h2>
+<span class="font-label-md text-label-md text-on-surface-variant">Live Sync • Kochi Desk</span>
+</div>
+</section>
+<!-- Metric Overview Cards (Bento-styled horizontal scroll) -->
+<section class="px-margin mb-5">
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Total Card -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-[0_8px_20px_-6px_rgba(15,56,44,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Total Active</span>
+<span class="material-symbols-outlined text-[18px] text-primary">analytics</span>
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-primary font-semibold">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Leads</span>
+</div>
+</div>
+<!-- New Leads Card -->
+<div class="bg-primary-container text-on-primary-container p-3.5 rounded-xl shadow-[0_8px_20px_-6px_rgba(15,56,44,0.12)] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-3 -bottom-3 w-16 h-16 rounded-full bg-primary-fixed/10 pointer-events-none"></div>
+<div class="flex items-center justify-between text-primary-fixed">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">New Incoming</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">mark_email_unread</span>
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-primary-fixed font-semibold">2</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Action req.</span>
+</div>
+</div>
+<!-- In Progress Card -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-[0_8px_20px_-6px_rgba(15,56,44,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">In Progress</span>
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-on-secondary-container font-semibold">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">In negotiation</span>
+</div>
+</div>
+<!-- Contacted Card -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-[0_8px_20px_-6px_rgba(15,56,44,0.05)] flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Contacted</span>
+<span class="material-symbols-outlined text-[18px]">contact_mail</span>
+</div>
+<div class="mt-3 flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg text-primary font-semibold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Follow-ups set</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Pills (Scrollable on small devices) -->
+<section class="px-margin mb-4 overflow-x-auto no-scrollbar">
+<div class="flex items-center gap-2 min-w-max pb-1" id="filterContainer">
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200" data-filter="all" type="button">
+        All Inquiries (5)
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" data-filter="new" type="button">
+        New (2)
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" data-filter="in_progress" type="button">
+        In Progress (1)
+      </button>
+<button class="filter-tab px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" data-filter="contacted" type="button">
+        Contacted (2)
+      </button>
+</div>
+</section>
+<!-- Leads List Container -->
+<section class="px-margin flex flex-col gap-3.5" id="leadsList">
+<!-- Lead 1: Afrin S -->
+<article class="lead-card bg-surface-container-lowest rounded-xl p-4 shadow-[0_8px_24px_-6px_rgba(15,56,44,0.06)] flex flex-col gap-3 transition-transform duration-200" data-status="new">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary font-headline-sm text-headline-sm flex items-center justify-center font-serif flex-shrink-0">
+            A
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold truncate leading-tight">Afrin S</h3>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 mt-0.5" href="tel:+915566213178">
+<span class="material-symbols-outlined text-[14px]">call</span>
+              +91 5566213178
+            </a>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            NEW
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10 mins ago</span>
+</div>
+</div>
+<!-- Property Mini Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">apartment</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">P001 • Skyline Residency</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Marine Drive, Kochi</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold flex-shrink-0">₹60 L</span>
+</div>
+<!-- Message Snippet -->
+<div class="bg-surface-container-lowest/60 rounded-lg p-2.5 flex items-start gap-2 bg-surface-container/40">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">chat_bubble</span>
+<p class="font-body-md text-body-md text-on-surface italic min-w-0 leading-snug">
+          “i am interested”
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" href="tel:+915566213178">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Quick Call</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md font-semibold active:scale-95 transition-all" href="https://wa.me/915566213178?text=Hello%20Afrin,%20regarding%20Skyline%20Residency..." target="_blank">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span>WhatsApp</span>
+</a>
+<button class="update-status-btn flex items-center justify-center gap-1 py-2.5 px-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-lead="Afrin S" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Update</span>
+</button>
+</div>
+</article>
+<!-- Lead 2: Shanavas S -->
+<article class="lead-card bg-surface-container-lowest rounded-xl p-4 shadow-[0_8px_24px_-6px_rgba(15,56,44,0.06)] flex flex-col gap-3 transition-transform duration-200" data-status="new">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 text-primary font-headline-sm text-headline-sm flex items-center justify-center font-serif flex-shrink-0">
+            S
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold truncate leading-tight">Shanavas S</h3>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 mt-0.5" href="tel:+919045321634">
+<span class="material-symbols-outlined text-[14px]">call</span>
+              +91 9045321634
+            </a>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            NEW
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">45 mins ago</span>
+</div>
+</div>
+<!-- Property Mini Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">save_as</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">P004 • Asset Nilaavu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Punnamada, Alappuzha</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold flex-shrink-0">₹96 L</span>
+</div>
+<!-- Message Snippet -->
+<div class="rounded-lg p-2.5 flex items-start gap-2 bg-surface-container/40">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">chat_bubble</span>
+<p class="font-body-md text-body-md text-on-surface italic min-w-0 leading-snug">
+          “is it available...”
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" href="tel:+919045321634">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Quick Call</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md font-semibold active:scale-95 transition-all" href="https://wa.me/919045321634?text=Hello%20Shanavas,%20regarding%20Asset%20Nilaavu..." target="_blank">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span>WhatsApp</span>
+</a>
+<button class="update-status-btn flex items-center justify-center gap-1 py-2.5 px-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" data-lead="Shanavas S" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Update</span>
+</button>
+</div>
+</article>
+<!-- Lead 3: Riyan R -->
+<article class="lead-card bg-surface-container-lowest rounded-xl p-4 shadow-[0_8px_24px_-6px_rgba(15,56,44,0.06)] flex flex-col gap-3 transition-transform duration-200" data-status="in_progress">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-headline-sm text-headline-sm flex items-center justify-center font-serif flex-shrink-0">
+            R
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold truncate leading-tight">Riyan R</h3>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 mt-0.5" href="tel:+919051234667">
+<span class="material-symbols-outlined text-[14px]">call</span>
+              +91 9051234667
+            </a>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            IN PROGRESS
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 hours ago</span>
+</div>
+</div>
+<!-- Property Mini Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">villa</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">P005 • Olive Casilda</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Ayyanthole, Thrissur</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold flex-shrink-0">₹89 L</span>
+</div>
+<!-- Message Snippet -->
+<div class="rounded-lg p-2.5 flex items-start gap-2 bg-surface-container/40">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">chat_bubble</span>
+<p class="font-body-md text-body-md text-on-surface italic min-w-0 leading-snug">
+          “what is the emi option...”
+        </p>
+</div>
+<!-- Advisor Internal Log Note -->
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">history_edu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+          Note: Sent EMI calculator &amp; bank loan options
+        </span>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" href="tel:+919051234667">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Quick Call</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md font-semibold active:scale-95 transition-all" href="https://wa.me/919051234667?text=Hello%20Riyan,%20regarding%20Olive%20Casilda%20Thrissur..." target="_blank">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span>WhatsApp</span>
+</a>
+<button class="schedule-btn flex items-center justify-center gap-1 py-2.5 px-1.5 rounded-xl bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold hover:bg-secondary-container active:scale-95 transition-all" data-lead="Riyan R" type="button">
+<span class="material-symbols-outlined text-[16px]">event_available</span>
+<span class="truncate">Schedule</span>
+</button>
+</div>
+</article>
+<!-- Lead 4: Junaid R -->
+<article class="lead-card bg-surface-container-lowest rounded-xl p-4 shadow-[0_8px_24px_-6px_rgba(15,56,44,0.06)] flex flex-col gap-3 transition-transform duration-200" data-status="contacted">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm flex items-center justify-center font-serif flex-shrink-0">
+            J
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold truncate leading-tight">Junaid R</h3>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 mt-0.5" href="tel:+914563213423">
+<span class="material-symbols-outlined text-[14px]">call</span>
+              +91 4563213423
+            </a>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            CONTACTED
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+</div>
+<!-- Property Mini Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">holiday_village</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">P003 • Aroma - By The Cliff</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Varkala, Trivandrum</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold flex-shrink-0">₹56 L</span>
+</div>
+<!-- Message Snippet -->
+<div class="rounded-lg p-2.5 flex items-start gap-2 bg-surface-container/40">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">chat_bubble</span>
+<p class="font-body-md text-body-md text-on-surface italic min-w-0 leading-snug">
+          “give more photos...”
+        </p>
+</div>
+<!-- Advisor Internal Log Note -->
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">attach_file</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+          Note: Shared brochure &amp; high-res gallery
+        </span>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" href="tel:+914563213423">
+<span class="material-symbols-outlined text-[16px]">outgoing_mail</span>
+<span>Follow Up</span>
+</a>
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>View Property</span>
+</a>
+</div>
+</article>
+<!-- Lead 5: Arif S -->
+<article class="lead-card bg-surface-container-lowest rounded-xl p-4 shadow-[0_8px_24px_-6px_rgba(15,56,44,0.06)] flex flex-col gap-3 transition-transform duration-200" data-status="contacted">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-sm text-headline-sm flex items-center justify-center font-serif flex-shrink-0">
+            A
+          </div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold truncate leading-tight">Arif S</h3>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1 mt-0.5" href="tel:+919900886123">
+<span class="material-symbols-outlined text-[14px]">call</span>
+              +91 9900886123
+            </a>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 flex-shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            CONTACTED
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 days ago</span>
+</div>
+</div>
+<!-- Property Mini Bar -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px]">domain</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-primary font-bold truncate">P002 • Olympus Hilite</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Palazhi, Calicut</span>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-secondary font-bold flex-shrink-0">₹70 L</span>
+</div>
+<!-- Message Snippet -->
+<div class="rounded-lg p-2.5 flex items-start gap-2 bg-surface-container/40">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">chat_bubble</span>
+<p class="font-body-md text-body-md text-on-surface italic min-w-0 leading-snug">
+          “can i get a site visit....”
+        </p>
+</div>
+<!-- Advisor Internal Log Note -->
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+          Note: Site visit proposed for Saturday morning
+        </span>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="confirm-visit-btn flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 transition-all" data-lead="Arif S" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Confirm Visit</span>
+</button>
+<a class="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-md text-label-md font-semibold active:scale-95 transition-all" href="https://wa.me/919900886123?text=Hello%20Arif,%20regarding%20Olympus%20Hilite%20Calicut%20visit..." target="_blank">
+<span class="material-symbols-outlined text-[16px]">forum</span>
+<span>WhatsApp</span>
+</a>
+</div>
+</article>
+</section>
+<!-- Floating / Bottom Quick Add Enquiry Section -->
+<section class="px-margin mt-6 mb-2">
+<div class="bg-primary-container text-on-primary p-4 rounded-xl shadow-[0_12px_28px_-6px_rgba(15,56,44,0.18)] flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-primary font-semibold leading-tight">Walk-in or Direct Call?</h4>
+<span class="font-body-sm text-body-sm text-on-primary-container">Add new buyer inquiry to sheet</span>
+</div>
+</div>
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold shadow-md hover:bg-secondary-container active:scale-95 transition-all flex-shrink-0" id="addNewLeadBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Add Lead</span>
+</button>
+</div>
+</section>
+<!-- Interactive Slide-Up Modal / Toast for Status Updates -->
+<div class="fixed bottom-20 left-1/2 -translate-x-1/2 w-[90%] max-w-sm bg-inverse-surface text-inverse-on-surface py-3 px-4 rounded-xl shadow-xl flex items-center justify-between gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50" id="statusToast">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toastMessage">Inquiry details updated</span>
+</div>
+<button class="text-inverse-on-surface/80 hover:text-inverse-on-surface" id="closeToast" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  (function () {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const leadCards = document.querySelectorAll('.lead-card');
+    const toast = document.getElementById('statusToast');
+    const toastMsg = document.getElementById('toastMessage');
+    const closeToast = document.getElementById('closeToast');
+
+    function showNotification(msg) {
+      if (!toast) return;
+      toastMsg.textContent = msg;
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+        toast.classList.remove('opacity-100');
+      }, 3500);
+    }
+
+    if (closeToast) {
+      closeToast.addEventListener('click', () => {
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      });
+    }
+
+    // Filter tab switching
+    filterTabs.forEach((tab) => {
+      tab.addEventListener('click', function () {
+        const filterVal = this.getAttribute('data-filter');
+
+        filterTabs.forEach((t) => {
+          t.classList.remove('bg-primary', 'text-on-primary');
+          t.classList.add('bg-surface-container-low', 'text-on-surface');
+        });
+        this.classList.remove('bg-surface-container-low', 'text-on-surface');
+        this.classList.add('bg-primary', 'text-on-primary');
+
+        leadCards.forEach((card) => {
+          const cardStatus = card.getAttribute('data-status');
+          if (filterVal === 'all' || cardStatus === filterVal) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Update Status Mock
+    document.querySelectorAll('.update-status-btn').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const lead = this.getAttribute('data-lead');
+        showNotification(`${lead}'s status moved to Contacted`);
+      });
+    });
+
+    // Confirm Visit Mock
+    document.querySelectorAll('.confirm-visit-btn').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const lead = this.getAttribute('data-lead');
+        showNotification(`Site visit confirmed for ${lead} (Saturday 10:30 AM)`);
+      });
+    });
+
+    // Schedule Viewing Mock
+    document.querySelectorAll('.schedule-btn').forEach((btn) => {
+      btn.addEventListener('click', function () {
+        const lead = this.getAttribute('data-lead');
+        showNotification(`Viewing scheduler opened for ${lead}`);
+      });
+    });
+
+    // Export button Mock
+    const exportBtn = document.getElementById('exportBtn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', function () {
+        showNotification('Exporting Enquiries sheet to CSV/Excel...');
+      });
+    }
+
+    // Add Lead Mock
+    const addLeadBtn = document.getElementById('addNewLeadBtn');
+    if (addLeadBtn) {
+      addLeadBtn.addEventListener('click', function () {
+        showNotification('Lead Entry form ready. Connect your CRM source.');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,56,44,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-sm"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[24px]">villa</span><span class="font-label-sm text-label-sm tracking-normal">Explore</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="saved-favorites" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm tracking-normal">Saved</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 transition-colors text-primary font-bold" data-path="inquiries" href="#"><span class="material-symbols-outlined text-[24px]">real_estate_agent</span><span class="font-label-sm text-label-sm tracking-normal">Inquiries</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="contact-advisor" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="font-label-sm text-label-sm tracking-normal">Advisor</span></a></div></nav></body></html>

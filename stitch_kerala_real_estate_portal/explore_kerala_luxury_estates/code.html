@@ -1,0 +1,940 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f5fbf7;}body{overscroll-behavior:none;color:#171d1b;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#171d1b", "on-tertiary-fixed-variant": "#155041", "tertiary": "#002219", "tertiary-fixed": "#b5efda", "error-container": "#ffdad6", "primary": "#002218", "on-tertiary-container": "#6da492", "primary-container": "#0f382c", "on-secondary-container": "#785a1a", "on-secondary-fixed-variant": "#5d4201", "inverse-on-surface": "#ecf2ee", "on-surface": "#171d1b", "surface-dim": "#d5dbd8", "primary-fixed": "#c1ecda", "surface-tint": "#3f6658", "on-primary": "#ffffff", "on-error": "#ffffff", "on-secondary-fixed": "#261900", "secondary-fixed": "#ffdea5", "inverse-surface": "#2c3230", "primary-fixed-dim": "#a6d0be", "surface-container-low": "#eff5f1", "on-primary-container": "#79a292", "on-secondary": "#ffffff", "on-error-container": "#93000a", "background": "#f5fbf7", "outline": "#717975", "on-tertiary-fixed": "#002018", "tertiary-container": "#00392c", "surface-container-lowest": "#ffffff", "secondary-fixed-dim": "#e9c176", "secondary-container": "#fed488", "on-primary-fixed": "#002117", "error": "#ba1a1a", "surface-container-high": "#e4eae6", "outline-variant": "#c1c8c3", "surface-bright": "#f5fbf7", "on-surface-variant": "#414845", "on-primary-fixed-variant": "#274e41", "inverse-primary": "#a6d0be", "secondary": "#775a19", "tertiary-fixed-dim": "#99d2be", "surface-variant": "#dee4e0", "surface": "#f5fbf7", "surface-container-highest": "#dee4e0", "on-tertiary": "#ffffff", "surface-container": "#e9efec" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.5rem", "margin": "1.25rem", "gutter": "1rem", "margin-desktop": "3rem", "gutter-desktop": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-tablet": "2rem", "space-xl": "2.25rem" }, fontFamily: { "headline-md": ["Newsreader"], "headline-lg": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "body-md": ["Manrope"], "label-sm": ["Manrope"], "label-lg": ["Manrope"], "headline-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg": ["Newsreader"], "body-sm": ["Manrope"], "body-lg": ["Manrope"] }, fontSize: { "headline-md": ["26px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "500" }], "display-lg-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Haven Real Estate Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UEMEfIm9tUQGDc63kFbRe3yr1Ps47vu5jMoL8SzZ5kUWo5RULkXufxmIy98-um-GgytuO7Bgy9DnDIjLPR-fXfxe_iZKaufuGpZUZkaElxWDJWSWzhUXLZcJqFiUM8x5Pyv1QXeCrWNc8Ixd4Jy1tHdoAOr1VY9pYO_YOCSS-3IxYF2iHr8dCdllJCGa42bXJiuBONA4-rUVAyh0vei--sWXmFAi-CsB7iOe9-rDNRwKu6XKPF-nyw86dC"><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-label-lg text-label-lg tracking-wider text-primary uppercase truncate">Kerala Estates</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Luxury Living</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><button aria-label="Select Location" class="flex items-center gap-1 h-11 px-2.5 rounded-full bg-surface-container-low text-primary hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-secondary text-[18px]">location_on</span><span class="font-label-md text-label-md text-on-surface font-medium truncate max-w-[80px]">Kochi</span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button><button aria-label="Search Properties" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Advisor Profile" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="contact-advisor" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE33HnplzqBw98iJXVw0SQuEbLPc9go0w9yL-u1k9AtnHhC_yK89HW91ExGgD_BRr-bhCRFMV67P9BhTdTtRFvy7tYhQpZmDaVhuIF750o7oRk3HJfzkgVaBKHda6i8VBREnbXdOJQy1OYgjxtMhyvKFu11PfVnAOmsuBmWnyOdCDYlbI6g2T6nS6fVVlqgvx8MZWCu8Yn8b7V_GBf4NNSgFpApHmAXg-1O149nJW8Pi9zFcm76Aw2CA"></a></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Search & Filter Controls -->
+<section class="px-margin pt-space-sm pb-space-md flex flex-col gap-space-sm">
+<div class="relative w-full flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-secondary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-12 pl-11 pr-10 bg-surface-container-lowest rounded-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none shadow-sm transition-all" id="propertySearchInput" placeholder="Search city, landmark or project..." type="text">
+<button aria-label="Clear search" class="hidden absolute right-3 w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" id="clearSearchBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Location Filter Scroll -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5" id="cityFilterContainer">
+<button class="filter-pill active px-4 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-primary text-on-primary transition-all shadow-sm" data-filter-type="city" data-filter-value="all" type="button">
+        All Residences
+      </button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-filter-type="city" data-filter-value="kochi" type="button">
+        Kochi (5)
+      </button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-filter-type="city" data-filter-value="calicut" type="button">
+        Calicut (1)
+      </button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-filter-type="city" data-filter-value="trivandrum" type="button">
+        Trivandrum (1)
+      </button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-filter-type="city" data-filter-value="thrissur" type="button">
+        Thrissur (1)
+      </button>
+<button class="filter-pill px-3.5 py-2 rounded-full font-label-md text-label-md whitespace-nowrap bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" data-filter-type="city" data-filter-value="alappuzha" type="button">
+        Alappuzha (1)
+      </button>
+</div>
+<!-- BHK Configuration Micro-Filter -->
+<div class="flex items-center gap-space-xs pt-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline pr-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span> Config:
+      </span>
+<button class="bhk-pill active px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider bg-primary-container text-on-primary transition-all" data-filter-type="bhk" data-filter-value="any" type="button">
+        Any BHK
+      </button>
+<button class="bhk-pill px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" data-filter-type="bhk" data-filter-value="3" type="button">
+        3 BHK (7)
+      </button>
+<button class="bhk-pill px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-high text-on-surface-variant hover:text-primary transition-all" data-filter-type="bhk" data-filter-value="4" type="button">
+        4 BHK (2)
+      </button>
+</div>
+</section>
+<!-- Curated Editorial Banner -->
+<section class="px-margin mb-space-md">
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-md shadow-md">
+<div class="absolute -right-10 -bottom-10 w-36 h-36 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">workspace_premium</span>
+            Curated Portfolio
+          </span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Kerala Chapter</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-primary mt-1">Exclusive Backwater &amp; City Living</h2>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim line-clamp-2">
+          From the serene water vistas of Punnamada to Cochin’s vibrant metropolitan tech corridors.
+        </p>
+<div class="flex items-center gap-space-md pt-2 mt-1 border-t-0">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase">Available</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed" id="totalListingsCounter">9 Estates</span>
+</div>
+<div class="w-px h-6 bg-primary-fixed/20"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase">Price Range</span>
+<span class="font-headline-sm text-headline-sm text-on-primary">₹42L – ₹96L</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Header & Active Result Indicator -->
+<div class="px-margin flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-primary">Featured Residences</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm" id="resultsCountBadge">
+        9 Listed
+      </span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="">100% RERA Verified</span>
+</div>
+</div>
+<!-- Real Property Listing Cards Container -->
+<section class="px-margin flex flex-col gap-space-lg" id="propertiesContainer">
+<!-- P001: SKYLINE RESIDENCY -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="kochi" data-id="P001" data-price="6000000" data-search="skyline residency edapally kochi lulu mall high rise waterfront backwater">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Skyline Residency - Waterfront Luxury Apartments Edapally Kochi" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeBQscwEuqp8TkWfA4fxpLUqSsD2HoFValPLQwzk64eorJOpDFXBSrhcJDG4xlv2A06hkM0wFJkYgoeezg15HI0x0Ukz62adccesUap9x3D4LB4-WA_cBaX_-mHgIdsqaZJYmgDr5P0NLuwjtmSt3FlNxGmr7zUzXtVdZQoTmXnRyub6zbvGP4VjPITRi0trUyQ0k1yhUy5MeN43N6tbT9Ku3Rp4qENwM07kHjHWLcDvu5aFcJFOy9yA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Skyline Residency" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹60 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹60,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Skyline Residency</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Edapally, Kochi (Near Lulu Mall)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          High rise water-front flats overlooking peaceful Kerala backwaters with sweeping morning vistas.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,200 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Balcony</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Car Parking</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">24/7 Security</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Power Backup</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Skyline Residency', '₹60 Lakh', 'Edapally, Kochi')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P002: OLYMPUS HILITE -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="calicut" data-id="P002" data-price="7000000" data-search="olympus hilite irrigaloor calicut hilite mall city views kozhikode">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Olympus Hilite - Expansive Luxury Home Calicut" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtyVR0F61ToF2oe9s3NiAtFkNZzaHefkR04geKu0FwITVYY5Uc2yG8XPt2B4Lji2L62rcAWZYdlHUSN0xGz_vZPlJb3mGWa8uf-W8dP51x1AGTgRJoAq4t0-7EEnSA6xdjhm-yxnjZe3bU_7eid8aoPZIPnA2WK8MNJwDTUuYzSi6DYMZHOhU6J230cMht0QikFDJw84KEC0Ll3XkGjfM9e8zGLyoOl1iwnlydJs6uaF8jSFRgVfdd2A">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Olympus Hilite" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹70 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹70,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Olympus Hilite</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Irrigaloor, Calicut (Near Hilite Mall)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Breathtaking Calicut skyline views with an expansive 2,733 sq.ft living footprint designed for refined hosting.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">2,733 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Swimming Pool</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Balcony</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Car Parking</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">24/7 Security</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Olympus Hilite', '₹70 Lakh', 'Irrigaloor, Calicut')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P004: ASSET NILAAVU -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="alappuzha" data-id="P004" data-price="9600000" data-search="asset nilaavu punnamada alappuzha ramada backwater view alleppey premier luxury">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Asset Nilaavu - Waterfront Estate Punnamada Alappuzha" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOxRsHx_5rsiNp6lRkA0JMDHQ1-xPnwzgGZru0VIqsgDhAOZZIqJm7kr3WsMJma_8Wsun0NXtDgKVe9zoeQI9RsegAdJFGnX3i3YcKgYKsUMIuyQJGA5DyaVtyAD15N1OIYKrDsia-luHMeaPqc1ZqukQa5mpavfce8rg5GoTrX1NiP5vR-rS1dYB8-cNqpBgZoTZt7Tev4c2hTZIKJla_o3gvXLzonEDcn1pcwafoXSAX-N-WJ3POxw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Asset Nilaavu" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹96 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹96,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Asset Nilaavu</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Punnamada, Alappuzha (Near Ramada)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Panoramic Alleppey backwater panoramas, luxury fittings, bespoke poolside cabanas, and concierge living.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,780 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold">Backwater View</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Swimming Pool</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">AC Fitness Centre</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Balcony</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Asset Nilaavu', '₹96 Lakh', 'Punnamada, Alappuzha')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P003: AROMA - BY THE CLIFF -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="4" data-city="trivandrum" data-id="P003" data-price="5600000" data-search="aroma by the cliff nanthancode trivandrum kowdiar quiet capital city">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Aroma By The Cliff Nanthancode Trivandrum" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQANBuM4A4OCAbU3h3KPdo-G-fqDQrI1pF0s6huSICkZeatDrdfqHOG2NDDPDbZYvogBtp9uvBTe6lzBl1dnFNPgcxgy5WBL06km9pOAvQQXQHX57zid4negI2DAILsa7wgs2OfadsNDrP9NZthV8nBppt9qcqRdJu6LuHg59kjx35MAeN_cZFUBAs6cfofz7DNKclI4ah18FK5Fg2u15vO20I1_urjhDL0ey4i0bzQEibVVBItwAl9A">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Aroma - By The Cliff" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹56 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹56,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Aroma – By The Cliff</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Nanthancode, Trivandrum
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Quiet residential luxury styling in an aristocratic capital enclave, offering serene tree-lined balconies.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">4 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,670 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Balcony</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Car Parking</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Swimming Pool</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Aroma – By The Cliff', '₹56 Lakh', 'Nanthancode, Trivandrum')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P005: OLIVE CASILDA -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="4" data-city="thrissur" data-id="P005" data-price="8900000" data-search="olive casilda viyyur thrissur cultural capital spacious 4 bhk">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Olive Casilda Luxury Apartment Viyyur Thrissur" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpmM6LWJeBZqJ1w-KylBjSjfflnEOTQ7xGnIV6xZ-1xumpEyJYruZdXvgck2RYrxin09PC_9ejebHfcFR99846jW5Bl2CAtWpV77pvQ7qmhMxCyip9JpiQ-icBm5JJs1RE0xG6GAfEJk5At4BckphQGBBk9g55a89kK9D0UT6Fu7dXMZMcwxKtiUIh5kCOq4k6HMmdRhsBHQYjFD4560KkZFyo17FeWiLVrXoJ8SSTT6feRPbjgAe8yA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Olive Casilda" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹89 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹89,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Olive Casilda</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Viyyur, Thrissur (Olive Casilda Road)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Quality living spaces crafted with heart in the cultural capital of Kerala. Massive 3,200 sq.ft layout.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">4 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">3,200 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Swimming Pool</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Gym</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">24/7 Security</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Balcony</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Olive Casilda', '₹89 Lakh', 'Viyyur, Thrissur')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P006: ASADO LAKO -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="kochi" data-id="P006" data-price="5500000" data-search="asado lako ernakulam kochi asado road lush greenery modular kitchen">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Asado Lako Ernakulam Kochi" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfMK81NbxY03rLASpKq_GQQY5BB2ARPgp9nGmTXGBsGzGNkIRlUpwBrPqGK1lj4oNgOsQ83wm-QeI5_W0Jm2ppio4aRba4ngghube1ch9xc8DFOtEOFbPXLA8iz03QJIieDLWTDLkXAWWRZJ-du55sadiNuFZoZB8F1vqYHGowhrUF3p4X5poUzSy_Fy6Dg0RQAtUQlFCnwkPkEXj598zS6f1EL2FJ4DM36AGsclVneie46Yc14vjoPg">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Asado Lako" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹55 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹55,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Asado Lako</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Ernakulam, Kochi (Asado Road)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Lush tropical surroundings and peaceful ambience featuring an ultra-modern modular kitchen design.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">2 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,500 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Parking</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Garden</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Modular Kitchen</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Asado Lako', '₹55 Lakh', 'Ernakulam, Kochi')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P007: CONFIDENT LEO 3 -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="kochi" data-id="P007" data-price="5900000" data-search="confident leo 3 kakkanad kochi thrikkakara north infopark smartcity">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Confident Leo 3 Kakkanad Kochi" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5g0ykGRqW7tU9nJ95tBjvWeQrpgdcl-PmHSt_bxZs0CfeNXhznIvisrE0k0iFhtnJW67JUkoFzNxWgS_LPAddpkGqO8tGcJNlmTTQJt5PYZfoBOMV6_ZdveEPkxc1yGMxXRDSpwfTpj-_msn3SXjXHD-X4gYeNK-e3cmXjeVP4b4tikLvHManF3F5a3o8sjQVK2weuv7pWjXhfxmZwSAnpgyQuWfmQFz3slUZ_HHgLtOmv6FfCYT6gw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Confident Leo 3" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹59 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹59,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Confident Leo 3</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Kakkanad, Kochi (Thrikkakara North)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Strategically positioned right at Cochin's thriving IT corridor, offering supreme rental yield potential.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,148 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Clubhouse</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Pool</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Gym</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Power Backup</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Confident Leo 3', '₹59 Lakh', 'Kakkanad, Kochi')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P008: HEAVENLY CITY -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="kochi" data-id="P008" data-price="4200000" data-search="heavenly city thuthiyoor kochi kakkanad peaceful residential">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Heavenly City Thuthiyoor Kakkanad Kochi" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARUHD-yTTTfKNw9advsVAKjNnwYYabyGWPReYAi6cakNll604h7ee0JZwpomHHURnEp1oQz7lqH9qGSYzLgBy6iqM-nL_NYmJOWh9M55oxQ2dvGZu0auP4Dji3B1v9cUKu2bdLu9YQczJpnxttEsHKYuEQHq6AAq_B6NAjjne0r1X6RyXj7Bqrebs2CN0XlraOH98xa5E3kvAV0NYzl1VNNPwZO5iexm8kgwpxo23C0_FQqpV4KS90CQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Heavenly City" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹42 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹42,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Heavenly City</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Thuthiyoor, Kochi (Near Kakkanad)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          A peaceful, noise-insulated residential haven nestled adjacent to Kakkanad's educational centers.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">2 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,400 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Children's Play Area</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Parking</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Heavenly City', '₹42 Lakh', 'Thuthiyoor, Kochi')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+<!-- P009: MANJOORAN ORCHID MEADOW -->
+<article class="property-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all" data-bhk="3" data-city="kochi" data-id="P009" data-price="4400000" data-search="manjooran orchid meadow kakkanad kochi sunrise hospital modern luxury family">
+<div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container">
+<img alt="Manjooran Orchid Meadow Kakkanad Kochi" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUY1Un40nBgp51NhDtnWkfw-BUwRCaSh1UqUFy-wP_rv9X-fwS9GrGxQlcQ8wFwt-1UjAHKk9XqkaUJaIPyCU8wtsDgS85r2QVrSi-sj6HxPVZ8J-w5Yh1IivCEoufOElrwEEYXuGeGpO2aoAL1ZmPhMwoyQuQWMqPCSv6_g-iWWUV1bUb6SmAC-4uNhP1BTgf6Dzu7fgFDbFOzGA-9ZFdB1nZ0gE3rMTZObb1ew-aOhZH_2aNmXhTOA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-black/20 pointer-events-none"></div>
+
+<button aria-label="Save Manjooran Orchid Meadow" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface flex items-center justify-center hover:text-error transition-colors" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Offered At</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-lg text-headline-lg text-on-primary">₹44 Lakh</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">(₹44,00,000)</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-md text-headline-md text-primary truncate">Manjooran Orchid Meadow</h4>
+
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+            Kakkanad, Kochi (Near Sunrise Hospital)
+          </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface line-clamp-2">
+          Modern luxury family home built for ease of living with seamless connectivity to healthcare &amp; top schools.
+        </p>
+<div class="flex items-center justify-between py-2 px-3 rounded-lg bg-surface-container-low text-primary font-label-md text-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bed</span>
+<span class="">3 BHK</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">bathtub</span>
+<span class="">3 Bath</span>
+</div>
+<div class="w-px h-3.5 bg-outline-variant"></div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-secondary">square_foot</span>
+<span class="">1,424 sq.ft</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Children's Play Area</span>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Security</span>
+</div>
+<div class="flex items-center gap-space-xs pt-space-xs">
+<button class="flex-1 h-11 px-4 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-1.5 hover:bg-primary-container transition-all" onclick="openInquiryModal('Manjooran Orchid Meadow', '₹44 Lakh', 'Kakkanad, Kochi')" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span class="">Book Site Visit</span>
+</button>
+<a aria-label="Enquire on WhatsApp" class="h-11 px-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg flex items-center justify-center hover:bg-surface-variant transition-all" data-path="inquiries" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty Search Feedback State (Shown when search/filter yields 0) -->
+<div class="hidden px-margin py-12 flex flex-col items-center text-center" id="noResultsState">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-secondary mb-3">
+<span class="material-symbols-outlined text-[32px]">travel_explore</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">No Matching Estates</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xs">
+      We couldn't find any residences matching that criteria. Reset your filters to browse all 9 Kerala properties.
+    </p>
+<button class="mt-4 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-all" onclick="resetAllFilters()" type="button">
+      Show All Residences
+    </button>
+</div>
+<!-- Editorial Advisory Footer Card -->
+<section class="px-margin pt-space-xl pb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">villa</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">NRI &amp; Investor Concierge</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">Looking for Bespoke Waterfront Land?</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Our senior property advisors handle deed title verifications, Kerala Coastal Zone clearances, and bespoke private tours.
+      </p>
+<div class="pt-2">
+<a class="inline-flex items-center gap-1.5 text-secondary font-label-lg text-label-lg font-bold hover:underline" data-path="contact-advisor" href="#">
+<span class="">Connect with Private Wealth Desk</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Slide-Up Booking & Inquiry Modal -->
+<div aria-hidden="true" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden items-end justify-center transition-opacity" id="inquiryModal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-t-2xl p-margin shadow-2xl flex flex-col gap-space-md max-h-[85vh] overflow-y-auto">
+<div class="w-12 h-1.5 bg-surface-container-highest rounded-full mx-auto -mt-2 mb-1"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-bold">Bespoke Kerala Tour</span>
+<h3 class="font-headline-md text-headline-md text-primary" id="modalPropertyName">Skyline Residency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalPropertySub">Edapally, Kochi • ₹60 Lakh</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary" onclick="closeInquiryModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Select Preferred Slot</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="slot-pill active p-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center" type="button">
+            Tomorrow<br><span class="font-body-sm text-body-sm">11:00 AM</span>
+</button>
+<button class="slot-pill p-2 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm text-center hover:bg-surface-container" type="button">
+            Saturday<br><span class="font-body-sm text-body-sm">03:30 PM</span>
+</button>
+<button class="slot-pill p-2 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm text-center hover:bg-surface-container" type="button">
+            Sunday<br><span class="font-body-sm text-body-sm">05:00 PM</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider" for="visitorPhone">Your WhatsApp / Phone</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-body-md text-body-md text-on-surface-variant">+91</span>
+<input class="w-full h-12 pl-12 pr-3 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="visitorPhone" placeholder="98470 12345" type="tel">
+</div>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full h-12 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-primary-container transition-all" id="confirmBookingBtn" onclick="confirmVisitBooking()" type="button">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+<span class="">Confirm Private Appointment</span>
+</button>
+<p class="font-label-sm text-label-sm text-center text-outline">
+          No obligation. A certified Kerala Estates advisor will reach out via WhatsApp.
+        </p>
+</div>
+<div class="hidden p-3 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md text-center" id="bookingSuccessAlert">
+        ✓ Appointment request confirmed! We will contact you shortly.
+      </div>
+</div>
+</div>
+</div>
+<script>
+  // State variables
+  let currentCityFilter = 'all';
+  let currentBhkFilter = 'any';
+  let currentSearchQuery = '';
+
+  const searchInput = document.getElementById('propertySearchInput');
+  const clearBtn = document.getElementById('clearSearchBtn');
+  const properties = document.querySelectorAll('.property-card');
+  const noResults = document.getElementById('noResultsState');
+  const resultsBadge = document.getElementById('resultsCountBadge');
+
+  // Bookmark Toggle
+  window.toggleBookmark = function(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isFilled = icon.innerText === 'favorite';
+    if (isFilled) {
+      icon.innerText = 'favorite_border';
+      icon.classList.remove('text-error');
+      btn.classList.remove('text-error');
+    } else {
+      icon.innerText = 'favorite';
+      icon.classList.add('text-error');
+      btn.classList.add('text-error');
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+  };
+
+  // Filter Functions
+  function applyFilters() {
+    let visibleCount = 0;
+
+    properties.forEach(card => {
+      const city = card.getAttribute('data-city');
+      const bhk = card.getAttribute('data-bhk');
+      const searchData = card.getAttribute('data-search') || '';
+
+      const matchesCity = (currentCityFilter === 'all') || (city === currentCityFilter);
+      const matchesBhk = (currentBhkFilter === 'any') || (bhk === currentBhkFilter);
+      const matchesSearch = !currentSearchQuery || searchData.toLowerCase().includes(currentSearchQuery.toLowerCase());
+
+      if (matchesCity && matchesBhk && matchesSearch) {
+        card.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+
+    resultsBadge.textContent = visibleCount + ' Listed';
+
+    if (visibleCount === 0) {
+      noResults.classList.remove('hidden');
+    } else {
+      noResults.classList.add('hidden');
+    }
+  }
+
+  // Setup City Pills
+  document.querySelectorAll('.filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.filter-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary', 'active');
+        p.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container-low', 'text-on-surface');
+      pill.classList.add('bg-primary', 'text-on-primary', 'active');
+      
+      currentCityFilter = pill.getAttribute('data-filter-value');
+      applyFilters();
+    });
+  });
+
+  // Setup BHK Pills
+  document.querySelectorAll('.bhk-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.bhk-pill').forEach(p => {
+        p.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+        p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      pill.classList.add('bg-primary-container', 'text-on-primary', 'active');
+
+      currentBhkFilter = pill.getAttribute('data-filter-value');
+      applyFilters();
+    });
+  });
+
+  // Search input handler
+  searchInput.addEventListener('input', (e) => {
+    currentSearchQuery = e.target.value.trim();
+    if (currentSearchQuery.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+    applyFilters();
+  });
+
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    currentSearchQuery = '';
+    clearBtn.classList.add('hidden');
+    applyFilters();
+    searchInput.focus();
+  });
+
+  window.resetAllFilters = function() {
+    searchInput.value = '';
+    currentSearchQuery = '';
+    clearBtn.classList.add('hidden');
+    
+    // Reset City
+    document.querySelector('.filter-pill[data-filter-value="all"]').click();
+    // Reset BHK
+    document.querySelector('.bhk-pill[data-filter-value="any"]').click();
+  };
+
+  // Modal interactions
+  const modal = document.getElementById('inquiryModal');
+  const modalName = document.getElementById('modalPropertyName');
+  const modalSub = document.getElementById('modalPropertySub');
+  const successAlert = document.getElementById('bookingSuccessAlert');
+
+  window.openInquiryModal = function(name, price, location) {
+    modalName.textContent = name;
+    modalSub.textContent = location + ' • ' + price;
+    successAlert.classList.add('hidden');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  };
+
+  window.closeInquiryModal = function() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  };
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeInquiryModal();
+    }
+  });
+
+  // Slot toggle inside modal
+  document.querySelectorAll('.slot-pill').forEach(slot => {
+    slot.addEventListener('click', () => {
+      document.querySelectorAll('.slot-pill').forEach(s => {
+        s.classList.remove('bg-primary', 'text-on-primary');
+        s.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+      slot.classList.remove('bg-surface-container-low', 'text-on-surface');
+      slot.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+
+  window.confirmVisitBooking = function() {
+    successAlert.classList.remove('hidden');
+    setTimeout(() => {
+      closeInquiryModal();
+      successAlert.classList.add('hidden');
+    }, 1800);
+  };
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,56,44,0.06)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 transition-colors text-primary font-bold" data-path="explore" href="#"><span class="material-symbols-outlined text-[24px]">villa</span><span class="font-label-sm text-label-sm tracking-normal">Explore</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="saved-favorites" href="#"><span class="material-symbols-outlined text-[24px]">favorite</span><span class="font-label-sm text-label-sm tracking-normal">Saved</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="inquiries" href="#"><span class="material-symbols-outlined text-[24px]">real_estate_agent</span><span class="font-label-sm text-label-sm tracking-normal">Inquiries</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="contact-advisor" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="font-label-sm text-label-sm tracking-normal">Advisor</span></a></div></nav>
+
+</body></html>

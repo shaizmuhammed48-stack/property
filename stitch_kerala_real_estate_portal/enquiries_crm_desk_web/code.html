@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "on-tertiary-fixed": "#002018", "inverse-primary": "#a6d0be", "on-primary-fixed-variant": "#274e41", "error": "#ba1a1a", "on-secondary-container": "#785a1a", "error-container": "#ffdad6", "surface-container-low": "#eff5f1", "on-tertiary": "#ffffff", "on-surface-variant": "#414845", "tertiary-container": "#00392c", "surface-container-lowest": "#ffffff", "primary-fixed": "#c1ecda", "surface-variant": "#dee4e0", "on-secondary-fixed": "#261900", "tertiary-fixed-dim": "#99d2be", "background": "#f5fbf7", "on-surface": "#171d1b", "primary": "#002218", "on-tertiary-container": "#6da492", "tertiary": "#002219", "on-background": "#171d1b", "outline": "#717975", "primary-fixed-dim": "#a6d0be", "tertiary-fixed": "#b5efda", "surface-bright": "#f5fbf7", "surface-container": "#e9efec", "secondary-fixed": "#ffdea5", "on-primary": "#ffffff", "surface-container-highest": "#dee4e0", "on-primary-container": "#79a292", "surface-tint": "#3f6658", "on-tertiary-fixed-variant": "#155041", "inverse-on-surface": "#ecf2ee", "on-error-container": "#93000a", "primary-container": "#0f382c", "secondary-fixed-dim": "#e9c176", "on-primary-fixed": "#002117", "inverse-surface": "#2c3230", "surface": "#f5fbf7", "surface-dim": "#d5dbd8", "secondary": "#775a19", "on-error": "#ffffff", "outline-variant": "#c1c8c3", "on-secondary-fixed-variant": "#5d4201", "surface-container-high": "#e4eae6", "secondary-container": "#fed488" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-desktop": "2rem", "gutter-tablet": "1.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem", "margin": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xl": "2.25rem", "space-md": "1rem", "gutter": "1rem", "margin-desktop": "3rem" }, "fontFamily": { "headline-md": ["Newsreader"], "label-sm": ["Manrope"], "label-md": ["Manrope"], "display-lg-mobile": ["Newsreader"], "label-lg": ["Manrope"], "display-lg": ["Newsreader"], "body-md": ["Manrope"], "headline-sm": ["Manrope"], "headline-lg": ["Newsreader"], "body-lg": ["Manrope"], "body-sm": ["Manrope"] }, "fontSize": { "headline-md": ["26px", { "lineHeight": "32px", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg-mobile": ["34px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "display-lg": ["44px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-md": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "38px", "fontWeight": "500" }], "body-lg": ["17px", { "lineHeight": "26px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col pt-space-lg pb-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="px-space-lg mb-space-lg"><a class="flex items-center gap-space-sm" data-path="explore-residences" href="#"><span class="material-symbols-outlined text-secondary text-[26px]">villa</span><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-none">Kerala Estates</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mt-0.5">Private Desk</span></div></a></div><div class="px-space-md mb-space-sm"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm">Operations &amp; Concierge</span></div><nav class="flex-1 px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="enquiries-and-crm" href="#"><span class="material-symbols-outlined text-[20px]">inbox</span><span>Inquiries &amp; Deals</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="schedule-visit" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>Site Visits</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="explore-residences" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Residences Catalog</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="concierge" href="#"><span class="material-symbols-outlined text-[20px]">room_service</span><span>NRI Concierge Desk</span></a></nav><div class="px-space-md pt-space-md"><div class="bg-surface-container p-space-sm rounded-xl flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-bold">Senior Advisor</span><span class="font-label-sm text-label-sm text-outline">Kochi Hub</span></div></div><a class="text-on-surface-variant hover:text-on-surface" data-path="login" href="#"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">K-RERA REG: K-RERA/PRJ/ERN/2024/089</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[20px] text-secondary">support_agent</span><span class="font-label-md text-label-md text-primary font-bold">+91 484 290 8000</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-20 bg-surface w-full px-gutter-desktop"><div class="flex flex-col w-full pb-space-xl">
+<!-- Desk Header Banner -->
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md py-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-bold">Private Concierge • Central Desk CRM</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Buyer Leads &amp; Inquiries CRM Desk</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Live high-net-worth investor inquiries across Kerala waterfront &amp; urban portfolios.</p>
+</div>
+<!-- Global Desk Actions -->
+<div class="flex items-center gap-space-sm self-end md:self-center">
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-xl mr-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container animate-spin" style="animation-duration: 4s;">sync</span>
+<span>Auto-synced: just now</span>
+</div>
+<button class="h-10 px-4 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md flex items-center gap-2 transition-all shadow-sm" onclick="exportLeadsCSV()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export CSV</span>
+</button>
+<button class="h-10 px-5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 transition-all shadow-md" onclick="openNewInquiryModal()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add New Inquiry</span>
+</button>
+</div>
+</div>
+<!-- KPI Statistics Overview Bar (4 Horizontal Asymmetric Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mt-space-sm mb-space-lg">
+<!-- Total Active Leads -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute -right-4 -top-4 w-20 h-20 bg-primary/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Total Active Leads</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-primary material-symbols-outlined text-[18px]">group</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">5</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">HNI Portfolios</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Kochi (1) • Alappuzha (1)</span>
+<span class="font-label-sm text-label-sm">Thrissur (1) • Calicut (1)</span>
+</div>
+</div>
+<!-- New Inquiries (Requires Immediate Callback) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">New Inquiries</span>
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span>
+</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">2</span>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase tracking-wider">Urgent Action</span>
+</div>
+<div class="mt-3 pt-2.5 bg-secondary-fixed/30 -mx-space-md -mb-space-md px-space-md py-2 flex items-center gap-1.5 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Requires immediate callback (&lt;30m SLA)</span>
+</div>
+</div>
+<!-- In Progress -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">In Progress</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-secondary material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">1</span>
+<span class="font-label-sm text-label-sm text-outline">Active Pipeline</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Olive Casilda (Thrissur)</span>
+<span class="font-bold text-secondary">EMI Consultation</span>
+</div>
+</div>
+<!-- Contacted -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-bold">Contacted</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-on-surface-variant material-symbols-outlined text-[18px]">event_available</span>
+</div>
+<div class="mt-3 flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary font-bold">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Engaged Prospects</span>
+</div>
+<div class="mt-3 pt-2.5 bg-surface-container-low -mx-space-md -mb-space-md px-space-md py-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Brochure sent (1)</span>
+<span class="font-bold text-primary">1 Site Visit Booked</span>
+</div>
+</div>
+</div>
+<!-- Main Workstation Layout: 9-col Leads Table + 3-col Quick Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left 9 Columns: Rich Table Workstation -->
+<div class="lg:col-span-9 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col">
+<!-- Table Controls Bar -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface text-body-sm pl-9 pr-3 py-2 rounded-lg outline-none focus:bg-surface-container transition-all placeholder:text-outline" id="leadSearchInput" onkeyup="filterLeadsTable()" placeholder="Search investor, ID, phone..." type="text"/>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-lg p-0.5">
+<button class="status-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm font-bold bg-surface-container-lowest text-primary shadow-xs" id="filterBtnALL" onclick="setStatusFilter('ALL')">ALL (5)</button>
+<button class="status-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" id="filterBtnNEW" onclick="setStatusFilter('NEW')">NEW (2)</button>
+<button class="status-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" id="filterBtnPROGRESS" onclick="setStatusFilter('IN PROGRESS')">IN PROGRESS (1)</button>
+<button class="status-tab-btn px-3 py-1.5 rounded-md font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" id="filterBtnCONTACTED" onclick="setStatusFilter('CONTACTED')">CONTACTED (2)</button>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span>Sort by:</span>
+<span class="text-primary font-bold cursor-pointer flex items-center gap-0.5">Recent Activity <span class="material-symbols-outlined text-[14px]">arrow_downward</span></span>
+</div>
+</div>
+<!-- Table Scroller -->
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="leadsDataTable">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-3 rounded-l-lg">Client &amp; Contact</th>
+<th class="py-3 px-3">Property Interest</th>
+<th class="py-3 px-3">Location &amp; Value</th>
+<th class="py-3 px-3">Inquiry &amp; Note</th>
+<th class="py-3 px-3">Status</th>
+<th class="py-3 px-3">Activity</th>
+<th class="py-3 px-3 text-right rounded-r-lg">Direct Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="leadsTableBody">
+<!-- Lead 1: Afrin S -->
+<tr class="lead-row hover:bg-surface-container-low/70 transition-colors group" data-name="Afrin S" data-property="P001 Skyline Residency" data-status="NEW">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-label-sm flex items-center justify-center shrink-0">AS</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] font-bold text-primary group-hover:text-secondary transition-colors">Afrin S</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>+91 5566213178</span>
+<button class="hover:text-primary" onclick="copyToClipboard('+915566213178')" title="Copy Phone"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm text-secondary font-bold">P001</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[150px]">Skyline Residency</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm text-primary font-bold">₹60 Lakhs</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">location_on</span> Kochi Marine Dr.
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm italic text-primary bg-surface-container px-2 py-1 rounded inline-block max-w-[200px] truncate">“i am interested”</div>
+<div class="text-[11px] text-outline mt-0.5">Awaiting initial concierge dial</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold bg-primary-fixed text-on-primary-fixed shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> NEW
+                </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md text-primary font-semibold">10 mins ago</div>
+<span class="font-label-sm text-[10px] text-error font-bold uppercase tracking-wider">High Priority</span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-primary flex items-center justify-center transition-colors" href="tel:+915566213178" title="Call Prospect">
+<span class="material-symbols-outlined text-[17px]">call</span>
+</a>
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center transition-colors" href="https://wa.me/915566213178?text=Greetings%20Afrin%20from%20Kerala%20Estates%20Private%20Desk.%20Regarding%20Skyline%20Residency%20Kochi..." target="_blank" title="WhatsApp Instant Chat">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openStatusMenu(this, 'Afrin S', 'P001')" title="Update Lead Stage">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Lead 2: Shanavas S -->
+<tr class="lead-row hover:bg-surface-container-low/70 transition-colors group" data-name="Shanavas S" data-property="P004 Asset Nilaavu" data-status="NEW">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold text-label-sm flex items-center justify-center shrink-0">SS</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] font-bold text-primary group-hover:text-secondary transition-colors">Shanavas S</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>+91 9045321634</span>
+<button class="hover:text-primary" onclick="copyToClipboard('+919045321634')" title="Copy Phone"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm text-secondary font-bold">P004</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[150px]">Asset Nilaavu</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm text-primary font-bold">₹96 Lakhs</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">location_on</span> Alappuzha Waters
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm italic text-primary bg-surface-container px-2 py-1 rounded inline-block max-w-[200px] truncate">“is it available...”</div>
+<div class="text-[11px] text-outline mt-0.5">NRI investor inquiry via web</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold bg-primary-fixed text-on-primary-fixed shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> NEW
+                </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md text-primary font-semibold">45 mins ago</div>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider">NRI Queue</span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-primary flex items-center justify-center transition-colors" href="tel:+919045321634" title="Call Prospect">
+<span class="material-symbols-outlined text-[17px]">call</span>
+</a>
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center transition-colors" href="https://wa.me/919045321634?text=Greetings%20Shanavas%20from%20Kerala%20Estates.%20Asset%20Nilaavu%20Alappuzha%20is%20available..." target="_blank" title="WhatsApp Instant Chat">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openStatusMenu(this, 'Shanavas S', 'P004')" title="Update Lead Stage">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Lead 3: Riyan R -->
+<tr class="lead-row hover:bg-surface-container-low/70 transition-colors group" data-name="Riyan R" data-property="P005 Olive Casilda" data-status="IN PROGRESS">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container font-bold text-label-sm flex items-center justify-center shrink-0">RR</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] font-bold text-primary group-hover:text-secondary transition-colors">Riyan R</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>+91 9051234667</span>
+<button class="hover:text-primary" onclick="copyToClipboard('+919051234667')" title="Copy Phone"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm text-secondary font-bold">P005</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[150px]">Olive Casilda</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm text-primary font-bold">₹89 Lakhs</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">location_on</span> Thrissur Round
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm italic text-on-surface-variant max-w-[220px] truncate">“what is the emi option...”</div>
+<div class="font-label-sm text-[11px] text-secondary font-semibold mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Sent EMI calculator &amp; loan options
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold bg-secondary-fixed text-on-secondary-fixed shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> IN PROGRESS
+                </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md text-primary font-semibold">2 hours ago</div>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">HDFC Desk Assigned</span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-primary flex items-center justify-center transition-colors" href="tel:+919051234667" title="Call Prospect">
+<span class="material-symbols-outlined text-[17px]">call</span>
+</a>
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center transition-colors" href="https://wa.me/919051234667?text=Hello%20Riyan,%20following%20up%20on%20the%20Olive%20Casilda%20EMI%20schedule..." target="_blank" title="WhatsApp Instant Chat">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary flex items-center justify-center transition-colors" onclick="scheduleVisitModal('Riyan R', 'Olive Casilda (Thrissur)')" title="Book Site Inspection">
+<span class="material-symbols-outlined text-[17px]">calendar_add_on</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Lead 4: Junaid R -->
+<tr class="lead-row hover:bg-surface-container-low/70 transition-colors group" data-name="Junaid R" data-property="P003 Aroma - By The Cliff" data-status="CONTACTED">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-variant text-on-surface-variant font-bold text-label-sm flex items-center justify-center shrink-0">JR</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] font-bold text-primary group-hover:text-secondary transition-colors">Junaid R</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>+91 4563213423</span>
+<button class="hover:text-primary" onclick="copyToClipboard('+914563213423')" title="Copy Phone"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm text-secondary font-bold">P003</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[150px]">Aroma - By The Cliff</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm text-primary font-bold">₹56 Lakhs</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">location_on</span> Trivandrum Cliff
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm italic text-on-surface-variant max-w-[220px] truncate">“give more photos...”</div>
+<div class="font-label-sm text-[11px] text-outline font-semibold mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">mark_email_read</span> Shared high-res brochure
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold bg-surface-variant text-on-surface-variant shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> CONTACTED
+                </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md text-on-surface-variant font-semibold">Yesterday</div>
+<span class="font-label-sm text-[10px] text-outline uppercase tracking-wider">Brochure View Logged</span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-primary flex items-center justify-center transition-colors" href="tel:+914563213423" title="Call Prospect">
+<span class="material-symbols-outlined text-[17px]">call</span>
+</a>
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center transition-colors" href="https://wa.me/914563213423?text=Hi%20Junaid,%20did%20you%20review%20the%20Aroma%20photos%20we%20sent?" target="_blank" title="WhatsApp Instant Chat">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary flex items-center justify-center transition-colors" onclick="scheduleVisitModal('Junaid R', 'Aroma - By The Cliff (Trivandrum)')" title="Schedule Tour">
+<span class="material-symbols-outlined text-[17px]">calendar_add_on</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Lead 5: Arif S -->
+<tr class="lead-row hover:bg-surface-container-low/70 transition-colors group" data-name="Arif S" data-property="P002 Olympus Hilite" data-status="CONTACTED">
+<td class="py-3.5 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-primary font-bold text-label-sm flex items-center justify-center shrink-0">AS</div>
+<div class="min-w-0">
+<div class="font-headline-sm text-[15px] font-bold text-primary group-hover:text-secondary transition-colors">Arif S</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span>+91 9900886123</span>
+<button class="hover:text-primary" onclick="copyToClipboard('+919900886123')" title="Copy Phone"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="font-label-sm text-label-sm text-secondary font-bold">P002</span>
+<div class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[150px]">Olympus Hilite</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm text-primary font-bold">₹70 Lakhs</div>
+<div class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">location_on</span> Calicut Bypass
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-body-sm text-body-sm italic text-on-surface-variant max-w-[220px] truncate">“can i get a site visit....”</div>
+<div class="font-label-sm text-[11px] text-primary font-bold mt-0.5 flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-secondary">verified</span> Site visit set for Saturday morning
+                </div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold bg-surface-variant text-on-surface-variant shadow-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> CONTACTED
+                </span>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md text-on-surface-variant font-semibold">2 days ago</div>
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider">Chauffeur Booked</span>
+</td>
+<td class="py-3.5 px-3 text-right">
+<div class="flex items-center justify-end gap-1">
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-primary flex items-center justify-center transition-colors" href="tel:+919900886123" title="Call Prospect">
+<span class="material-symbols-outlined text-[17px]">call</span>
+</a>
+<a class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center transition-colors" href="https://wa.me/919900886123?text=Namaskaram%20Arif,%20confirming%20your%20Saturday%20visit%20to%20Olympus%20Hilite..." target="_blank" title="WhatsApp Instant Chat">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+</a>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors" onclick="openStatusMenu(this, 'Arif S', 'P002')" title="Update Lead Stage">
+<span class="material-symbols-outlined text-[17px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Volume Metrics -->
+<div class="mt-space-md pt-3 flex flex-col sm:flex-row items-center justify-between text-outline font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span>Showing 5 verified buyer leads • Cumulative inquiry value: <strong class="text-primary font-bold">₹3.71 Crores</strong></span>
+</div>
+<div class="flex items-center gap-1 mt-2 sm:mt-0">
+<span class="text-secondary font-bold">Kerala Real Estate Regulatory Authority Compliant Desk</span>
+</div>
+</div>
+</div>
+<!-- Right 3 Columns: Interactive Filter & Feed Panel -->
+<div class="lg:col-span-3 flex flex-col gap-space-md">
+<!-- Property Matching Quick Selector -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-primary">Property Filter</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">filter_list</span>
+</div>
+<div class="space-y-2">
+<button class="prop-filter-btn w-full text-left p-2 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold flex items-center justify-between transition-colors" onclick="filterByProperty('ALL')">
+<span>All Properties</span>
+<span class="font-label-sm bg-surface-container-highest px-2 py-0.5 rounded">5</span>
+</button>
+<button class="prop-filter-btn w-full text-left p-2 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-between transition-colors" onclick="filterByProperty('Skyline')">
+<span class="truncate">Skyline Residency (Kochi)</span>
+<span class="font-label-sm bg-surface-container-low px-1.5 py-0.5 rounded text-outline">1</span>
+</button>
+<button class="prop-filter-btn w-full text-left p-2 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-between transition-colors" onclick="filterByProperty('Asset Nilaavu')">
+<span class="truncate">Asset Nilaavu (Alappuzha)</span>
+<span class="font-label-sm bg-surface-container-low px-1.5 py-0.5 rounded text-outline">1</span>
+</button>
+<button class="prop-filter-btn w-full text-left p-2 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-between transition-colors" onclick="filterByProperty('Olive Casilda')">
+<span class="truncate">Olive Casilda (Thrissur)</span>
+<span class="font-label-sm bg-surface-container-low px-1.5 py-0.5 rounded text-outline">1</span>
+</button>
+<button class="prop-filter-btn w-full text-left p-2 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-between transition-colors" onclick="filterByProperty('Aroma')">
+<span class="truncate">Aroma By The Cliff (TVM)</span>
+<span class="font-label-sm bg-surface-container-low px-1.5 py-0.5 rounded text-outline">1</span>
+</button>
+<button class="prop-filter-btn w-full text-left p-2 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-between transition-colors" onclick="filterByProperty('Olympus')">
+<span class="truncate">Olympus Hilite (Calicut)</span>
+<span class="font-label-sm bg-surface-container-low px-1.5 py-0.5 rounded text-outline">1</span>
+</button>
+</div>
+</div>
+<!-- Advisor Desk Assignment & Quota -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-primary">Desk Operations</span>
+<span class="material-symbols-outlined text-[18px] text-outline">shield_person</span>
+</div>
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary text-[11px] font-bold flex items-center justify-center">MD</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Mathew D.</div>
+<div class="font-label-sm text-[10px] text-outline">Kochi • Central HNI</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary">3 Leads</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[11px] font-bold flex items-center justify-center">PN</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Priya Nair</div>
+<div class="font-label-sm text-[10px] text-outline">Calicut • Malabar Coast</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-bold text-secondary">2 Leads</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5">
+<div class="flex justify-between text-outline font-label-sm text-label-sm mb-1">
+<span>Daily Callback SLA</span>
+<span class="text-primary font-bold">85% achieved</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-1.5 rounded-full" style="width: 85%;"></div>
+</div>
+</div>
+</div>
+<!-- Recent Concierge Live Activity Stream -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-primary">Activity Log</span>
+<span class="material-symbols-outlined text-[18px] text-outline">history</span>
+</div>
+<div class="relative pl-4 space-y-3.5 before:content-[''] before:absolute before:left-1.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<div class="relative">
+<span class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+<div class="font-label-sm text-label-sm text-primary font-bold">Afrin S registered</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Web inquiry for P001 Skyline Kochi</div>
+<div class="font-label-sm text-[10px] text-outline mt-0.5">10m ago • Direct Portal</div>
+</div>
+<div class="relative">
+<span class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+<div class="font-label-sm text-label-sm text-primary font-bold">EMI Schedule Dispatched</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Delivered to Riyan R via WhatsApp</div>
+<div class="font-label-sm text-[10px] text-outline mt-0.5">2h ago • Banking Desk</div>
+</div>
+<div class="relative">
+<span class="absolute -left-[19px] top-1 w-2.5 h-2.5 rounded-full bg-outline ring-2 ring-surface-container-lowest"></span>
+<div class="font-label-sm text-label-sm text-primary font-bold">Site Tour Scheduled</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant leading-tight">Arif S • Olympus Hilite, Calicut</div>
+<div class="font-label-sm text-[10px] text-outline mt-0.5">2 days ago • Concierge Chauffeur</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal: Schedule Site Visit -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 flex items-center justify-center hidden" id="siteVisitModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full mx-4 shadow-xl p-space-lg flex flex-col relative">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Kerala Estates Concierge</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5">Schedule Private Inspection</h2>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center" onclick="closeVisitModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm mt-2">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Investor Name &amp; Contact</label>
+<input class="w-full bg-surface-container-low text-primary font-bold px-3 py-2 rounded-lg text-body-sm outline-none" id="modalClientName" readonly="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Matched Luxury Property</label>
+<input class="w-full bg-surface-container-low text-primary font-bold px-3 py-2 rounded-lg text-body-sm outline-none" id="modalPropertyName" readonly="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Preferred Date</label>
+<input class="w-full bg-surface-container text-on-surface px-3 py-2 rounded-lg text-body-sm outline-none focus:bg-surface-container-low" type="date" value="2025-03-01"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Time Window</label>
+<select class="w-full bg-surface-container text-on-surface px-3 py-2 rounded-lg text-body-sm outline-none focus:bg-surface-container-low">
+<option>10:00 AM (Morning Breeze)</option>
+<option>03:30 PM (Sunset Inspection)</option>
+<option>05:30 PM (Twilight Waterfront)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Concierge Chauffeur &amp; Yacht Pickup</label>
+<div class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low text-body-sm text-on-surface">
+<input checked="" class="accent-primary w-4 h-4 rounded" id="chauffeurCheck" type="checkbox"/>
+<label class="font-label-md text-label-md cursor-pointer" for="chauffeurCheck">Arrange private Mercedes airport/hotel transfer in Kochi</label>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container" onclick="closeVisitModal()">Cancel</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-md hover:bg-primary-container" onclick="confirmVisitSchedule()">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Confirm &amp; Notify Investor</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Modal: Add New Inquiry Desk Entry -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 flex items-center justify-center hidden" id="newInquiryModal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full mx-4 shadow-xl p-space-lg flex flex-col relative">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">New Lead Record</span>
+<h2 class="font-headline-md text-headline-md text-primary mt-0.5">Register Inbound Buyer</h2>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center" onclick="closeNewInquiryModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<form class="space-y-space-sm mt-2" id="newInquiryForm" onsubmit="handleCreateLead(event)">
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Investor Full Name</label>
+<input class="w-full bg-surface-container text-on-surface px-3 py-2 rounded-lg text-body-sm outline-none focus:bg-surface-container-low" id="leadNameInput" placeholder="e.g. Thomas Varghese" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Phone / WhatsApp</label>
+<input class="w-full bg-surface-container text-on-surface px-3 py-2 rounded-lg text-body-sm outline-none focus:bg-surface-container-low" id="leadPhoneInput" placeholder="+91 9847..." required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Matched Property</label>
+<select class="w-full bg-surface-container text-on-surface px-3 py-2 rounded-lg text-body-sm outline-none focus:bg-surface-container-low" id="leadPropertySelect">
+<option value="P001 Skyline Residency|Kochi|₹60 L">P001 Skyline Residency (Marine Dr, Kochi - ₹60 L)</option>
+<option value="P004 Asset Nilaavu|Alappuzha|₹96 L">P004 Asset Nilaavu (Backwaters, Alappuzha - ₹96 L)</option>
+<option value="P005 Olive Casilda|Thrissur|₹89 L">P005 Olive Casilda (Swaraj Round, Thrissur - ₹89 L)</option>
+<option value="P003 Aroma - By The Cliff|Trivandrum|₹56 L">P003 Aroma - By The Cliff (Kovalam, TVM - ₹56 L)</option>
+<option value="P002 Olympus Hilite|Calicut|₹70 L">P002 Olympus Hilite (Bypass, Calicut - ₹70 L)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Investor Message / Note</label>
+<textarea class="w-full bg-surface-container text-on-surface px-3 py-2 rounded-lg text-body-sm outline-none focus:bg-surface-container-low" id="leadMessageInput" placeholder="e.g. Seeking sea-facing penthouse, NRI repatriation terms" rows="2"></textarea>
+</div>
+<div class="mt-space-lg flex items-center justify-end gap-space-sm pt-2">
+<button class="px-4 py-2 rounded-xl text-on-surface-variant font-label-md text-label-md hover:bg-surface-container" onclick="closeNewInquiryModal()" type="button">Cancel</button>
+<button class="px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md flex items-center gap-2 shadow-md hover:bg-primary" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Save &amp; Queue Inbound Lead</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Toast Notification System -->
+<div class="fixed bottom-6 right-8 bg-primary text-on-primary px-4 py-3 rounded-xl shadow-xl flex items-center gap-2.5 text-body-sm transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50" id="deskToast">
+<span class="material-symbols-outlined text-secondary text-[20px]" id="toastIcon">check_circle</span>
+<span id="toastMsg">Action executed successfully</span>
+</div>
+</div>
+<script>
+  function showToast(msg, icon = 'check_circle') {
+    const toast = document.getElementById('deskToast');
+    const toastMsg = document.getElementById('toastMsg');
+    const toastIcon = document.getElementById('toastIcon');
+    if (!toast || !toastMsg) return;
+    toastMsg.textContent = msg;
+    toastIcon.textContent = icon;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  function copyToClipboard(val) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(val);
+      showToast('Phone number ' + val + ' copied to clipboard');
+    }
+  }
+
+  function setStatusFilter(status) {
+    const rows = document.querySelectorAll('.lead-row');
+    const buttons = document.querySelectorAll('.status-tab-btn');
+    
+    buttons.forEach(b => {
+      b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      b.classList.add('text-outline');
+    });
+
+    const activeBtn = document.getElementById('filterBtn' + (status === 'IN PROGRESS' ? 'PROGRESS' : status));
+    if (activeBtn) {
+      activeBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-xs');
+      activeBtn.classList.remove('text-outline');
+    }
+
+    rows.forEach(r => {
+      if (status === 'ALL' || r.getAttribute('data-status') === status) {
+        r.style.display = '';
+      } else {
+        r.style.display = 'none';
+      }
+    });
+  }
+
+  function filterByProperty(propKeyword) {
+    const rows = document.querySelectorAll('.lead-row');
+    const propBtns = document.querySelectorAll('.prop-filter-btn');
+    propBtns.forEach(b => {
+      b.classList.remove('bg-surface-container', 'text-primary', 'font-bold');
+      b.classList.add('text-on-surface-variant');
+    });
+
+    event.currentTarget.classList.add('bg-surface-container', 'text-primary', 'font-bold');
+    event.currentTarget.classList.remove('text-on-surface-variant');
+
+    rows.forEach(r => {
+      const propText = r.getAttribute('data-property') || '';
+      if (propKeyword === 'ALL' || propText.toLowerCase().includes(propKeyword.toLowerCase())) {
+        r.style.display = '';
+      } else {
+        r.style.display = 'none';
+      }
+    });
+  }
+
+  function filterLeadsTable() {
+    const query = document.getElementById('leadSearchInput').value.toLowerCase();
+    const rows = document.querySelectorAll('.lead-row');
+    rows.forEach(r => {
+      const text = r.textContent.toLowerCase();
+      r.style.display = text.includes(query) ? '' : 'none';
+    });
+  }
+
+  function exportLeadsCSV() {
+    const csvContent = "data:text/csv;charset=utf-8," 
+      + "Client Name,Phone,Property ID,Property Name,Location,Price,Inquiry Message,Status,Last Activity,Internal Notes\n"
+      + "Afrin S,+91 5566213178,P001,Skyline Residency,Kochi,₹60 L,i am interested,NEW,10 mins ago,Awaiting initial concierge dial\n"
+      + "Shanavas S,+91 9045321634,P004,Asset Nilaavu,Alappuzha,₹96 L,is it available...,NEW,45 mins ago,NRI investor inquiry via web\n"
+      + "Riyan R,+91 9051234667,P005,Olive Casilda,Thrissur,₹89 L,what is the emi option...,IN PROGRESS,2 hours ago,Sent EMI calculator & loan options\n"
+      + "Junaid R,+91 4563213423,P003,Aroma - By The Cliff,Trivandrum,₹56 L,give more photos...,CONTACTED,Yesterday,Shared high-res brochure\n"
+      + "Arif S,+91 9900886123,P002,Olympus Hilite,Calicut,₹70 L,can i get a site visit....,CONTACTED,2 days ago,Site visit set for Saturday morning\n";
+
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "Kerala_Estates_Buyer_Leads_" + new Date().toISOString().slice(0, 10) + ".csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    showToast('Exported 5 records to Kerala_Estates_Buyer_Leads.csv');
+  }
+
+  function scheduleVisitModal(client, property) {
+    document.getElementById('modalClientName').value = client;
+    document.getElementById('modalPropertyName').value = property;
+    document.getElementById('siteVisitModal').classList.remove('hidden');
+  }
+
+  function closeVisitModal() {
+    document.getElementById('siteVisitModal').classList.add('hidden');
+  }
+
+  function confirmVisitSchedule() {
+    const client = document.getElementById('modalClientName').value;
+    closeVisitModal();
+    showToast('Private viewing & chauffeur request confirmed for ' + client, 'calendar_month');
+  }
+
+  function openNewInquiryModal() {
+    document.getElementById('newInquiryModal').classList.remove('hidden');
+  }
+
+  function closeNewInquiryModal() {
+    document.getElementById('newInquiryModal').classList.add('hidden');
+  }
+
+  function handleCreateLead(e) {
+    e.preventDefault();
+    const name = document.getElementById('leadNameInput').value;
+    const phone = document.getElementById('leadPhoneInput').value;
+    const propVal = document.getElementById('leadPropertySelect').value.split('|');
+    const msg = document.getElementById('leadMessageInput').value || 'Fresh web inquiry';
+
+    const tbody = document.getElementById('leadsTableBody');
+    const tr = document.createElement('tr');
+    tr.className = 'lead-row hover:bg-surface-container-low/70 transition-colors group';
+    tr.setAttribute('data-status', 'NEW');
+    tr.setAttribute('data-name', name);
+    tr.setAttribute('data-property', propVal[0]);
+
+    tr.innerHTML = `
+      <td class="py-3.5 px-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed font-bold text-label-sm flex items-center justify-center shrink-0">
+            \${name.slice(0, 2).toUpperCase()}
+          </div>
+          <div class="min-w-0">
+            <div class="font-headline-sm text-[15px] font-bold text-primary group-hover:text-secondary transition-colors">\${name}</div>
+            <div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+              <span>\${phone}</span>
+              <button onclick="copyToClipboard('\${phone}')" title="Copy Phone" class="hover:text-primary"><span class="material-symbols-outlined text-[13px]">content_copy</span></button>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td class="py-3.5 px-3">
+        <span class="font-label-sm text-label-sm text-secondary font-bold">\${propVal[0].split(' ')[0]}</span>
+        <div class="font-body-sm text-body-sm text-on-surface font-semibold truncate max-w-[150px]">\${propVal[0].replace(propVal[0].split(' ')[0], '').trim()}</div>
+      </td>
+      <td class="py-3.5 px-3">
+        <div class="font-body-sm text-body-sm text-primary font-bold">\${propVal[2]}</div>
+        <div class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+          <span class="material-symbols-outlined text-[12px]">location_on</span> \${propVal[1]}
+        </div>
+      </td>
+      <td class="py-3.5 px-3">
+        <div class="font-body-sm text-body-sm italic text-primary bg-surface-container px-2 py-1 rounded inline-block max-w-[200px] truncate">&ldquo;\${msg}&rdquo;</div>
+        <div class="text-[11px] text-outline mt-0.5">Manual desk entry</div>
+      </td>
+      <td class="py-3.5 px-3">
+        <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold bg-primary-fixed text-on-primary-fixed shadow-xs">
+          <span class="w-1.5 h-1.5 rounded-full bg-primary"></span> NEW
+        </span>
+      </td>
+      <td class="py-3.5 px-3">
+        <div class="font-label-md text-label-md text-primary font-semibold">Just now</div>
+        <span class="font-label-sm text-[10px] text-error font-bold uppercase tracking-wider">Unassigned</span>
+      </td>
+      <td class="py-3.5 px-3 text-right">
+        <div class="flex items-center justify-end gap-1">
+          <a href="tel:\${phone}" title="Call Prospect" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-primary flex items-center justify-center transition-colors">
+            <span class="material-symbols-outlined text-[17px]">call</span>
+          </a>
+          <a href="https://wa.me/\${phone.replace(/[^0-9]/g, '')}" target="_blank" title="WhatsApp Instant Chat" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center transition-colors">
+            <span class="material-symbols-outlined text-[17px]">chat</span>
+          </a>
+          <button onclick="openStatusMenu(this, '\${name}', '\${propVal[0]}')" title="Update Lead Stage" class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant flex items-center justify-center transition-colors">
+            <span class="material-symbols-outlined text-[17px]">more_vert</span>
+          </button>
+        </div>
+      </td>
+    `;
+
+    tbody.insertBefore(tr, tbody.firstChild);
+    closeNewInquiryModal();
+    showToast('Inquiry for ' + name + ' registered in Central CRM');
+    document.getElementById('newInquiryForm').reset();
+  }
+
+  function openStatusMenu(btn, name, prop) {
+    const action = confirm("Progress '" + name + "' to next pipeline stage?");
+    if (action) {
+      showToast(name + ' moved to Next Stage', 'trending_up');
+    }
+  }
+</script></main></div></body></html>
